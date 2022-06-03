@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- MyBatis共通設定 -->
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="localCacheScope" value="STATEMENT" />
+
+		<setting name="autoMappingUnknownColumnBehavior"
+			value="FAILING" />
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="jdbcTypeForNull" value="NULL" />
+		<setting name="logImpl" value="LOG4J2" />
+	</settings>
+
+	<!-- Mapperで利用する入出力データクラスを格納するパッケージの一覧 -->
+	<typeAliases>
+		<package name="jp.co.ana.cas.template.logic" />
+	</typeAliases>
+
+	<!-- Mapperインタフェースクラスの格納パッケージ -->
+	<!-- 注意: Spring Cloudを利用する場合、この設定が適用されないためソースコードで@MapperScanを指定します -->
+	<mappers>
+		<package
+			name="jp.co.ana.cas.template.repository.dao.postgres.mapper" />
+	</mappers>
+
+</configuration>

@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: MARB-B18  
+  profiles:
+    active: production
+feign:
+  client:
+    name: SignInservice
+    name2: CommandService
+    baseurl: localhost:8082/
+    default-to-properties: true
+    default-config: default
+    
+endpoint:
+   request:
+     commandcryptic-url: commandcryptic
+     pnrAddMultiElements-url: pnrAddMultiElements
+app:
+    swagger:
+      json:
+        location: swaggerJsonPath
+    error:
+      msg:
+        full-width-char: FlightNumber/Date contains full width character
+        record-not-found: Records matching the required conditions not found
+        soapfront-connect: No connection completed with data-source
+        soapfront-response: Response is not valid
+        requestbody-invalid: Request body is not valid
+   

@@ -1,0 +1,266 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id "com.github.spotbugs" version "4.2.3"
+    id 'checkstyle'
+    id 'jacoco'
+    id 'com.thinkimi.gradle.MybatisGenerator' version '2.3'
+}
+
+group = 'jp.co.ana.cas'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+    // SLF4Jã‚’ä½¿ã‚�ã�ªã�„è¨­å®š
+    all*.exclude module : 'spring-boot-starter-logging'
+    // â–¼â–¼â–¼MyBatisGeneratorç”¨è¨­å®šâ–¼â–¼â–¼
+    mybatisGenerator
+    // â–²â–²â–²MyBatisGeneratorç”¨è¨­å®šâ–²â–²â–²
+}
+
+ext {
+    set('springCloudVersion', "2020.0.2")
+    set('log4j2.version', '2.16.0')
+}
+
+repositories {
+    // â–¼â–¼â–¼ASYNETç”¨è¨­å®šâ–¼â–¼â–¼
+    maven {
+        name 'spring'
+        url = 'https://repo.spring.io/release'
+    }
+    // â–²â–²â–²ASYNETç”¨è¨­å®šâ–²â–²â–²
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+
+    // MyBatisç”¨
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+    implementation group: 'org.mybatis.generator', name: 'mybatis-generator-core', version: '1.4.0'
+
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
+    // Mockitoç”¨
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testImplementation 'org.mockito:mockito-core:3.12.4'
+    testImplementation 'org.mockito:mockito-inline:3.12.4'
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // Log4J2ç”¨è¨­å®š
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+
+    // OpenAPIç”¨
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'org.openapitools:jackson-databind-nullable:0.2.2'
+
+    // ãƒ†ã‚¹ãƒˆã�§lombokã‚’ä½¿ã�†ã�Ÿã‚�ã�®è¨­å®š
+    testRuntime('org.junit.platform:junit-platform-launcher');
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    
+    // DBUnit
+    testImplementation 'org.dbunit:dbunit:2.7.0'
+    testImplementation 'com.github.springtestdbunit:spring-test-dbunit:1.3.0'
+    
+    //SDE-MSA-PRIN ç›£è¦–ã�Œå®¹æ˜“ã�ªè¨­è¨ˆã�«ã�™ã‚‹ (MSA-PRIN-CD-04)
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'io.micrometer:micrometer-registry-prometheus'
+    
+    // Open Feign (REST Client)
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+    // SDE-MSA-PRIN éšœå®³ã‚’éš”é›¢ã�™ã‚‹ (MSA-PRIN-SD-03) 
+    // SDE-MSA-PRIN éšœå®³ã‚’å›žå¾©ã�™ã‚‹ (MSA-PRIN-SD-04)
+    implementation 'io.github.resilience4j:resilience4j-spring-boot2:1.7.0'
+    implementation 'io.github.resilience4j:resilience4j-micrometer:1.7.0'
+
+    //<!-- Spring Cloud Sleuth -->
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
+    
+    // ActiveMQ
+    implementation 'org.springframework.boot:spring-boot-starter-activemq'
+    implementation 'org.messaginghub:pooled-jms'
+
+    // OpenAPI
+    implementation 'org.springdoc:springdoc-openapi-ui:1.5.5'
+
+    // AWS SDK
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-core', version: '1.12.22'
+    implementation 'com.amazonaws:aws-java-sdk-s3'
+
+    // k8sç”¨
+    implementation group: 'io.kubernetes', name: 'client-java', version: '13.0.0'
+
+    // JSONç”¨
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.3'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.3'
+
+
+    
+    // common
+    implementation 'org.springframework:spring-aspects'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.apache.httpcomponents:httpclient'
+    implementation 'org.modelmapper.extensions:modelmapper-spring:2.3.9'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+checkstyle {
+    toolVersion = "8.43"
+    sourceSets = [project.sourceSets.main]
+    ignoreFailures = true
+    configProperties = [
+            'checkstyle.suppress.file': "${rootDir}/config/checkstyle/checkstyle-suppressions.xml",
+    ]
+}
+
+spotbugs {
+    excludeFilter = file("${rootDir}/config/spotbugs/exclude_filter.xml")
+}
+
+spotbugsMain {
+    reports {
+        html {
+            enabled = true
+            destination = file("$buildDir/reports/spotbugs/main/spotbugs.html")
+            stylesheet = 'fancy-hist.xsl'
+        }
+    }
+}
+
+spotbugsTest {
+    reports {
+        html {
+            enabled = true
+            destination = file("$buildDir/reports/spotbugs/test/spotbugstest.html")
+            stylesheet = 'fancy-hist.xsl'
+        }
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+// â–¼â–¼â–¼é�™çš„è§£æž�ã�‹ã‚‰ã�®é™¤å¤–æ�¡ä»¶â–¼â–¼â–¼
+def jacocoExclude = ['**/dto/**','**/dao/**','src/main/java/jp/co/ana/cas/resources/**'] // MyBatisGeneratorã�§è‡ªå‹•ç”Ÿæˆ�ã�—ã�ŸDTOã€�DAOã�¨MSãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã�®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’é™¤å¤–ã�™ã‚‹æ�¡ä»¶
+// â–²â–²â–²é�™çš„è§£æž�ã�‹ã‚‰ã�®é™¤å¤–æ�¡ä»¶â–²â–²â–²
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+    // â–¼â–¼â–¼é�™çš„è§£æž�ã�‹ã‚‰ã�®é™¤å¤–æ�¡ä»¶â–¼â–¼â–¼
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it,
+                     exclude: jacocoExclude)
+        }))
+    }
+    // â–²â–²â–²é�™çš„è§£æž�ã�‹ã‚‰ã�®é™¤å¤–æ�¡ä»¶â–²â–²â–²
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+    // â–¼â–¼â–¼é�™çš„è§£æž�ã�‹ã‚‰ã�®é™¤å¤–æ�¡ä»¶â–¼â–¼â–¼
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it,
+                     exclude: jacocoExclude)
+        }))
+    }
+    // â–²â–²â–²é�™çš„è§£æž�ã�‹ã‚‰ã�®é™¤å¤–æ�¡ä»¶â–²â–²â–²
+}
+
+test {
+    useJUnitPlatform()
+    jacoco {
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        classDumpDir = file("$buildDir/jacoco/classpathdumps")
+    }
+    // â–¼â–¼â–¼ãƒ†ã‚¹ãƒˆæ™‚ã�®ãƒ­ã‚°å‡ºåŠ›è¨­å®šâ–¼â–¼â–¼
+    testLogging {
+        // ãƒ†ã‚¹ãƒˆæ™‚ã�®æ¨™æº–å‡ºåŠ›ã�¨æ¨™æº–ã‚¨ãƒ©ãƒ¼å‡ºåŠ›ã‚’è¡¨ç¤ºã�™ã‚‹
+        showStandardStreams true
+        // ã‚¤ãƒ™ãƒ³ãƒˆã‚’å‡ºåŠ›ã�™ã‚‹ (TestLogEvent)
+        events 'started', 'skipped', 'passed', 'failed'
+        // ä¾‹å¤–ç™ºç”Ÿæ™‚ã�®å‡ºåŠ›è¨­å®š (TestExceptionFormat)
+        exceptionFormat 'full'
+    }
+    // â–²â–²â–²ãƒ†ã‚¹ãƒˆæ™‚ã�®ãƒ­ã‚°å‡ºåŠ›è¨­å®šâ–²â–²â–²
+}
+
+javadoc {
+    options.charSet = 'UTF-8'
+    options.encoding = 'UTF-8'
+    failOnError = false
+}
+
+bootJar {
+    layered()
+}
+
+// â–¼â–¼â–¼MyBatisGeneratorç”¨è¨­å®šâ–¼â–¼â–¼
+mybatisGenerator {
+    verbose = true
+    //configuration file
+    configFile = 'src/main/resources/generatorConfig.xml'
+
+    //dependencyThe version is the latest version.
+    dependencies {
+        mybatisGenerator project(':')
+        //mybatisGenerator 'com.itfsw: mybatis-generator-plugin:1.3.10'
+        //mybatisGenerator 'org.mybatis.generator: mybatis-generator-core:1.4.0'
+        //mybatisGenerator 'org.postgresql: postgresql'
+    }
+}
+// â–²â–²â–²MyBatisGeneratorç”¨è¨­å®šâ–²â–²â–²

@@ -1,0 +1,718 @@
+{
+  "pnrReply": {
+    "pnrHeader": [
+      {
+        "reservationInfo": {
+          "reservation": [
+            {
+              "companyId": "1A",
+              "controlNumber": "5LZIIP",
+              "controlType": "J"
+            }
+          ]
+        }
+      }
+    ],
+    "pnrType": {
+      "attributeDetails": [
+        {
+          "attributeType": "strin"
+        }
+      ]
+    },
+    "securityInformation": {
+      "responsibilityInformation": {
+        "typeOfPnrElement": "RP",
+        "agentId": "AASU",
+        "officeId": "TYONH0980",
+        "iataCode": "16394350"
+      },
+      "queueingInformation": {
+        "queueingOfficeId": "TYONH0980"
+      },
+      "secondRpInformation": {
+        "creationOfficeId": "TYONH0980",
+        "creationDate": "20322",
+        "creationTime": "458"
+      }
+    },
+    "generalErrorInfo": [
+      {
+        "errorOrWarningCodeDetails": {
+          "errorDetails": {
+            "errorCode": "23951",
+            "errorCategory": "INF",
+            "errorCodeOwner": "1A"
+          }
+        },
+        "errorWarningDescription": {
+          "freeTextDetails": {
+            "textSubjectQualifier": "3",
+            "informationType": "stri",
+            "source": "str",
+            "language": "str"
+          },
+          "freeText": [
+            "TICKET RECONCILIATION NEEDED"
+          ]
+        }
+      }
+    ],
+    "pnrHeaderTag": {
+      "statusInformation": [
+        {
+          "indicator": "RLR"
+        }
+      ]
+    },
+    "technicalData": {
+      "generalPNRInformation": {
+        "statusDetails": {
+          "isPNRModifDuringTrans": "MOD"
+        }
+      }
+    },
+    "travellerInfo": [
+      {
+        "elementManagementPassenger": {
+          "status": "str",
+          "reference": {
+            "number": 2,
+            "qualifier": "str"
+          },
+          "segmentName": "NM",
+          "lineNumber": 1
+        },
+        "passengerData": [
+          {
+            "travellerInformation": {
+              "traveller": {
+                "surname": "SORANO",
+                "quantity": 1,
+                "staffType": "str"
+              },
+              "passenger": [
+                {
+                  "firstName": "TARO",
+                  "type": "ADT",
+                  "infantIndicator": "s",
+                  "identificationCode": "string"
+                }
+              ]
+            },
+            "dateOfBirth": {
+              "dateAndTimeDetails": {
+                "date": "12121980"
+              }
+            }
+          }
+        ],
+        "nameError": {
+          "errorOrWarningCodeDetails": {
+            "errorDetails": {
+              "errorCode": "23951",
+              "errorCategory": "INF",
+              "errorCodeOwner": "1A"
+            }
+          },
+          "errorWarningDescription": {
+            "freeTextDetails": {
+              "textSubjectQualifier": "3",
+              "informationType": "stri",
+              "source": "str",
+              "language": "str"
+            },
+            "freeText": [
+              "TICKET RECONCILIATION NEEDED"
+            ]
+          }
+        }
+      }
+    ],
+    "originDestinationDetails": [
+      {
+        "itineraryInfo": [
+          {
+            "elementManagementItinerary": {
+              "segmentName": "AIR",
+              "lineNumber": 2,
+              "status": "str",
+              "reference": {
+                "number": 2,
+                "qualifier": "str"
+              }
+            },
+            "travelProduct": {
+              "product": {
+                "depDate": "011199",
+                "depTime": "0137",
+                "arrDate": "061258",
+                "arrTime": "3511"
+              },
+              "boardpointDetail": {
+                "cityCode": "HND"
+              },
+              "offpointDetail": {
+                "cityCode": "FRA"
+              },
+              "companyDetail": {
+                "identification": "NH",
+                "secondIdentification": "stri"
+              },
+              "productDetails": {
+                "identification": "string",
+                "classOfService": "Y",
+                "subtype": "s"
+              },
+              "typeDetail": {
+                "detail": "str"
+              },
+              "processingIndicator": "str"
+            },
+            "itineraryReservationInfo": {
+              "reservation": {
+                "companyId": "NH",
+                "controlNumber": "5LZIIP",
+                "controlType": "s",
+                "time": "0912",
+                "date": "311056"
+              }
+            },
+            "relatedProduct": {
+              "quantity": 1,
+              "status": [
+                "str"
+              ]
+            },
+            "flightDetail": {
+              "productDetails": {
+                "equipment": "789",
+                "numOfStops": 0,
+                "weekDay": 3
+              },
+              "departureInformation": {
+                "departTerminal": "3"
+              },
+              "arrivalStationInfo": {
+                "terminal": "1"
+              }
+            },
+            "cabinDetails": {
+              "cabinDetails": {
+                "classDesignator": "s"
+              }
+            },
+            "itineraryfreeFormText": [
+              {
+                "freeText": [
+                  "SEE RTSVC"
+                ]
+              }
+            ],
+            "itineraryFreetext": {
+              "freetextDetail": {
+                "status": "str"
+              },
+              "longFreetext": "string"
+            },
+            "customerTransactionData": {
+              "pos": {
+                "classification": "s",
+                "crs": "str",
+                "pointOfSaleCountry": "st"
+              },
+              "flight": {
+                "cabin": "st",
+                "subclass": 0,
+                "flightType": "st"
+              },
+              "connection": 0
+            },
+            "yieldGroup": {
+              "yieldDataGroup": {
+                "yieldInformations": {
+                  "monetaryDetails": {
+                    "typeQualifier": "str",
+                    "amount": 0
+                  },
+                  "otherMonetaryDetails": [
+                    {
+                      "typeQualifier": "str",
+                      "amount": 0
+                    }
+                  ]
+                },
+                "classCombinaison": {
+                  "bookingClassDetails": [
+                    {
+                      "designator": "s"
+                    }
+                  ]
+                },
+                "ondyield": {
+                  "destination": "str",
+                  "origin": "str"
+                }
+              }
+            },
+            "legInfo": [
+              {
+                "legTravelProduct": {
+                  "companyDetails": {
+                    "operatingCompany": "str"
+                  }
+                }
+              }
+            ],
+            "typicalCarData": {
+              "errorWarning": {
+                "applicationError": {
+                  "errorDetails": {
+                    "errorCode": "23951",
+                    "errorCategory": "INF",
+                    "errorCodeOwner": "1A"
+                  }
+                },
+                "errorFreeText": {
+                  "freeTextDetails": {
+                    "textSubjectQualifier": "3",
+                    "informationType": "stri",
+                    "source": "str",
+                    "language": "str",
+                    "encoding": "str"
+                  },
+                  "freeText": [
+                    "TICKET RECONCILIATION NEEDED"
+                  ]
+                }
+              }
+            },
+            "errorInfo": {
+              "errorOrWarningCodeDetails": {
+                "errorDetails": {
+                  "errorCode": "23951",
+                  "errorCategory": "INF",
+                  "errorCodeOwner": "1A"
+                }
+              },
+              "errorWarningDescription": {
+                "freeTextDetails": {
+                  "textSubjectQualifier": "3",
+                  "informationType": "stri",
+                  "source": "str",
+                  "language": "str"
+                },
+                "freeText": [
+                  "TICKET RECONCILIATION NEEDED"
+                ]
+              }
+            },
+            "referenceForSegment": {
+              "reference": [
+                {
+                  "number": "string",
+                  "qualifier": "str"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "dataElementsMaster": {
+      "dataElementsIndiv": [
+        {
+          "elementManagementData": {
+            "status": "str",
+            "reference": {
+              "number": 2,
+              "qualifier": "str"
+            },
+            "segmentName": "NM",
+            "lineNumber": 1
+          },
+          "pnrSecurity": {
+            "indicator": "s",
+            "securityInfo": {
+              "agentCode": "stri",
+              "creationDate": "string",
+              "officeId": "stringstr"
+            },
+            "security": [
+              {
+                "accessMode": "s",
+                "identification": "string"
+              }
+            ]
+          },
+          "miscellaneousRemarks": {
+            "remarks": {
+              "type": "str",
+              "category": "st",
+              "freetext": "string",
+              "providerType": "str"
+            },
+            "individualSecurity": [
+              {
+                "office": "string",
+                "officeIdentifier": "s",
+                "accessMode": "s"
+              }
+            ]
+          },
+          "extendedRemark": {
+            "structuredRemark": {
+              "type": "str",
+              "category": "s",
+              "freetext": "string"
+            }
+          },
+          "serviceRequest": {
+            "ssr": {
+              "type": "FQTV",
+              "status": "HK",
+              "quantity": 1,
+              "companyId": "YY",
+              "indicator": "P02",
+              "boardpoint": "str",
+              "offpoint": "str",
+              "freeText": [
+                "string"
+              ]
+            },
+            "ssrb": [
+              {
+                "crossRef": "strin",
+                "data": "stri",
+                "seatType": [
+                  "st"
+                ]
+              }
+            ]
+          },
+          "seatPaxInfo": [
+            {
+              "seatPaxDetails": {
+                "genericDetails": {
+                  "seatCharacteristic": [
+                    "st"
+                  ]
+                }
+              },
+              "crossRef": {
+                "reference": [
+                  {
+                    "number": "strin",
+                    "qualifier": "str"
+                  }
+                ]
+              }
+            }
+          ],
+          "frequentFlyerInformationGroup": {
+            "frequentTravellerInfo": {
+              "frequentTraveler": {
+                "company": "str",
+                "membershipNumber": "string"
+              },
+              "priorityDetails": [
+                {
+                  "qualifier": "st",
+                  "priorityCode": "s",
+                  "tierLevel": "stri"
+                }
+              ],
+              "redemptionInformation": {
+                "category": "string",
+                "approvalCode": "string"
+              }
+            },
+            "discountInformation": {
+              "discountDetails": {
+                "discountCode": "string"
+              }
+            },
+            "bookingClassInformation": {
+              "bookingClassDetails": {
+                "designator": "s"
+              }
+            }
+          },
+          "ticketElement": {
+            "printOptions": "string",
+            "ticket": {
+              "indicator": "st",
+              "time": "2130",
+              "date": "181164",
+              "officeId": "TYONH0111",
+              "airlineCode": "NH",
+              "freetext": "string",
+              "queueNumber": "str",
+              "queueCategory": "str",
+              "sitaAddress": [
+                "strings"
+              ]
+            }
+          },
+          "referencedRecord": {
+            "referencedReservationInfo": {
+              "reservation": {
+                "companyId": "NH",
+                "controlNumber": "5LZIIP",
+                "controlType": "s",
+                "time": "2009",
+                "date": "250961"
+              }
+            },
+            "securityInformation": {
+              "responsibilityInformation": {
+                "typeOfPnrElement": "RP",
+                "agentId": "AASU",
+                "officeId": "TYONH0980",
+                "iataCode": 0
+              }
+            }
+          },
+          "optionElement": {
+            "optionElementInfo": {
+              "date": "150322",
+              "queue": 1,
+              "freetext": "NH REQUIRES TICKET ON OR BEFORE 18MAR:2359 TYO TIME ZONE",
+              "mainOffice": "string",
+              "category": 0,
+              "time": "1100"
+            },
+            "individualSecurity": [
+              {
+                "office": "string",
+                "officeIdentifier": "s",
+                "accessMode": "s"
+              }
+            ]
+          },
+          "otherDataFreetext": [
+            {
+              "freetextDetail": {
+                "subjectQualifier": "str",
+                "type": "stri",
+                "status": "str",
+                "companyId": "str"
+              },
+              "longFreetext": "string"
+            }
+          ],
+          "elementErrorInformation": {
+            "errorOrWarningCodeDetails": {
+              "errorDetails": {
+                "errorCode": "23951",
+                "errorCategory": "INF",
+                "errorCodeOwner": "1A"
+              }
+            },
+            "errorWarningDescription": {
+              "freeTextDetails": {
+                "textSubjectQualifier": "3",
+                "informationType": "stri",
+                "source": "str",
+                "language": "str"
+              },
+              "freeText": [
+                "TICKET RECONCILIATION NEEDED"
+              ]
+            }
+          },
+          "elementsIndicators": [
+            {
+              "statusDetails": {
+                "indicator": "str"
+              }
+            }
+          ],
+          "eltPosDetails": {
+            "sbrUserIdentification": {
+              "originIdentification": {
+                "inHouseIdentification1": "TYONH0111"
+              }
+            },
+            "agentId": {
+              "internalIdDetails": [
+                {
+                  "inhouseId": "string"
+                }
+              ]
+            },
+            "pointOfSaleDate": {
+              "timeMode": "LT",
+              "dateTime": {
+                "year": "2022",
+                "month": "3",
+                "day": "25",
+                "hour": "19",
+                "minutes": "20"
+              }
+            }
+          },
+          "accessLevel": [
+            {
+              "securityDetails": {
+                "accessMode": "B",
+                "inhouseIdentification": "TYONH0111"
+              }
+            }
+          ],
+          "referenceForDataElement": {
+            "reference": [
+              {
+                "number": "string",
+                "qualifier": "str"
+              }
+            ]
+          },
+          "structuredFop": [
+            {
+              "paymentModule": {
+                "mopDetailedData": {
+                  "creditCardDetailedData": {
+                    "transactionStatus": [
+                      {
+                        "errorOrWarningCodeDetails": {
+                          "errorDetails": {
+                            "errorCode": "strin",
+                            "errorCategory": "str"
+                          }
+                        },
+                        "errorWarningDescription": {
+                          "freeTextDetails": {
+                            "textSubjectQualifier": "3",
+                            "source": "str",
+                            "encoding": "str"
+                          },
+                          "freeText": "string"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dcsData": {
+      "segmentSection": [
+        {
+          "elementManagementStructData": {
+            "elementReference": {
+              "number": 2,
+              "qualifier": "str"
+            },
+            "segmentName": "str",
+            "lineNumber": 1
+          },
+          "referenceForStructDataElement": {
+            "reference": [
+              {
+                "number": "string",
+                "qualifier": "str"
+              }
+            ]
+          },
+          "dcsSegmentInfo": {
+            "paxType": {
+              "referenceDetails": {
+                "type": "str"
+              }
+            }
+          }
+        }
+      ],
+      "legSection": [
+        {
+          "elementManagementStructData": {
+            "elementReference": {
+              "number": 2,
+              "qualifier": "str"
+            },
+            "segmentName": "str",
+            "lineNumber": 1
+          },
+          "referenceForStructDataElement": {
+            "reference": [
+              {
+                "number": "string",
+                "qualifier": "str"
+              }
+            ]
+          },
+          "dcsLegInfo": {
+            "legPosition": {
+              "itemNumber": 1
+            },
+            "leg": {
+              "origin": "HND",
+              "destination": "FRA"
+            },
+            "paxType": {
+              "referenceDetails": {
+                "type": "str"
+              }
+            },
+            "seatDelivery": {
+              "seatDetails": {
+                "seatNumber": "string"
+              }
+            },
+            "paxStatus": {
+              "statusDetails": [
+                {
+                  "type": "str",
+                  "indicator": "str"
+                }
+              ]
+            },
+            "accregReason": [
+              {
+                "reasons": {
+                  "attributeDetails": {
+                    "attributeType": "ARC",
+                    "attributeDescription": "NO"
+                  }
+                },
+                "deliveryInformation": {
+                  "freeTextQualification": {
+                    "textSubjectQualifier": "3",
+                    "informationType": "AR"
+                  },
+                  "freeText": [
+                    "NOSHOW BY ONLOAD PROCESS"
+                  ]
+                }
+              }
+            ],
+            "regradeCabin": {
+              "cabinCode": "Y"
+            },
+            "acceptanceChannel": {
+              "acceptanceOrigin": {
+                "originatorTypeCode": "A"
+              },
+              "applicationType": {
+                "applicationDetails": {
+                  "internalId": "JFE"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "commandCrypticReply": {
+    "cityOrAirportCode": "LAX",
+    "cityCode": "TYO",
+    "time": "0304/0304A",
+    "date": "WED25MAY22",
+    "gmtDifference": "-16:00"
+  }
+}

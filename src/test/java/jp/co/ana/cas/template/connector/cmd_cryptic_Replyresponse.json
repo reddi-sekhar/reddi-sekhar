@@ -1,0 +1,32 @@
+{
+  "soapBody": {
+    "commandCrypticReply": {
+      "longTextString": {
+        "textStringDetails": "string"
+      },
+      "messageActionDetails": {
+        "messageFunctionDetails": {
+          "businessFunction": "string",
+          "messageFunction": "string"
+        },
+        "responseType": "string"
+      }
+    }
+  },
+  "soapHeader": {
+    "session": {
+      "securityToken": "string",
+      "sequenceNumber": "string",
+      "sessionId": "string",
+      "transactionStatusCode": "string"
+    },
+    "transactionFlowLinkType": {
+      "consumer": {
+        "uniqueID": "string"
+      },
+      "receiver": {
+        "serverID": "string"
+      }
+    }
+  }
+}

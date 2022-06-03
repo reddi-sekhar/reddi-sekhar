@@ -1,0 +1,591 @@
+{
+      "dataElementsMaster": {
+        "dataElementsIndiv": [
+          {
+            "accessLevel": {
+              "securityDetails": [
+                {
+                  "accessMode": "string",
+                  "inhouseIdentification": "string",
+                  "typeOfEntity": "string"
+                }
+              ]
+            },
+            "accounting": {
+              "account": {
+                "clientReference": "string",
+                "companyNumber": "string",
+                "costNumber": "string",
+                "gsttaxDetails": "string",
+                "number": "string"
+              },
+              "accountNumberOfUnits": "string"
+            },
+            "commission": {
+              "commissionInfo": {
+                "amount": 0,
+                "percentage": 0,
+                "remitIndicator": "string",
+                "vatIndicator": "string"
+              },
+              "indicator": "string",
+              "manualCapping": 0,
+              "oldCommission": {
+                "amount": 0,
+                "percentage": 0,
+                "remitIndicator": "string",
+                "vatIndicator": "string"
+              },
+              "passengerType": "string"
+            },
+            "dateAndTimeInformation": {
+              "dateAndTime": {
+                "firstDate": "string",
+                "locationIdentification": "string",
+                "movementType": "string"
+              }
+            },
+            "elementManagementData": {
+              "reference": {
+                "number": "string",
+                "qualifier": "string"
+              },
+              "segmentName": "string"
+            },
+            "extendedRemark": {
+              "structuredRemark": {
+                "category": "string",
+                "freetext": "string",
+                "type": "string"
+              }
+            },
+            "fareDiscount": {
+              "attributeDetails": [
+                {
+                  "attributeDescription": "string",
+                  "attributeType": "string"
+                }
+              ],
+              "birthDate": "string",
+              "customer": {
+                "cardCheck": "string",
+                "cardNumber": 0,
+                "cardType": 0,
+                "companyId": "string",
+                "owner": 0,
+                "version": 0
+              },
+              "discount": [
+                {
+                  "adjustmentReason": "string",
+                  "percentage": 0,
+                  "staffName": "string",
+                  "staffNumber": "string",
+                  "status": "string"
+                }
+              ],
+              "numberDetail": {
+                "units": 0,
+                "unitsQualifier": "string"
+              },
+              "passengerType": "string",
+              "residentDisc": {
+                "alphaCheck": "string",
+                "cardNumber": 0,
+                "certificateNumber": "string",
+                "idCardCode": "string",
+                "idCardType": "string",
+                "zipCode": "string"
+              },
+              "rpInformation": {
+                "companyId": "string",
+                "referenceNumber": 0
+              }
+            },
+            "fareElement": {
+              "freetextLong": "string",
+              "generalIndicator": "string",
+              "officeId": [
+                "string"
+              ],
+              "passengerType": "string"
+            },
+            "farePrintOverride": {
+              "override": {
+                "baseFare": "string",
+                "equivalentFare": "string",
+                "taxAmount": [
+                  "string"
+                ],
+                "totalFare": "string"
+              },
+              "passengerType": "string"
+            },
+            "fopExtension": [
+              {
+                "extFOP": [
+                  {
+                    "dataValue": "string",
+                    "referenceQualifier": "string"
+                  }
+                ],
+                "fopSequenceNumber": 0,
+                "newFopsDetails": {
+                  "chdData": "string",
+                  "cvData": "string",
+                  "delegationCode": "string",
+                  "gwtData": "string",
+                  "iataNumber": 0,
+                  "mcoCouponNumber": "string",
+                  "mcoDateOfIssue": "string",
+                  "mcoDocNumber": "string",
+                  "mcoIataNumber": 0,
+                  "mcoPlaceOfIssue": "string",
+                  "onoData": "string",
+                  "printedFreeflow": "string",
+                  "reportedFreeflow": "string"
+                },
+                "passengerType": "string"
+              }
+            ],
+            "formOfPayment": {
+              "fop": [
+                {
+                  "accountNumber": "string",
+                  "amount": 0,
+                  "approvalCode": "string",
+                  "creditCardCode": "string",
+                  "currencyCode": "string",
+                  "customerAccountNumber": "string",
+                  "expiryDate": "string",
+                  "freetext": "string",
+                  "identification": "string",
+                  "paymentTimeReference": "string"
+                }
+              ]
+            },
+            "freetextData": {
+              "freetextDetail": {
+                "companyId": "string",
+                "status": "string",
+                "subjectQualifier": "string",
+                "type": "string"
+              },
+              "longFreetext": "string"
+            },
+            "frequentTravellerData": {
+              "frequentTraveller": {
+                "companyId": "string",
+                "membershipNumber": "string"
+              }
+            },
+            "frequentTravellerVerification": {
+              "account": {
+                "number": "string",
+                "numberQualifier": "string"
+              },
+              "actionRequest": "string",
+              "company": {
+                "code": "string",
+                "otherPartnerCode": "string",
+                "partnerCode": "string"
+              }
+            },
+            "manualFareDocument": {
+              "document": {
+                "companyId": "string",
+                "lastConjuction": 0,
+                "lastConjuctionCD": 0,
+                "ticketNumber": "string",
+                "ticketNumberCd": 0
+              },
+              "freeflow": "string",
+              "passengerType": "string"
+            },
+            "miscellaneousRemark": {
+              "remarks": {
+                "amount": 0,
+                "category": "string",
+                "currency": "string",
+                "freetext": "string",
+                "officeId": [
+                  "string"
+                ],
+                "providerType": "string",
+                "type": "string"
+              }
+            },
+            "optionElement": {
+              "optionDetail": {
+                "category": 0,
+                "date": "string",
+                "freetext": "string",
+                "officeId": "string",
+                "queue": 0
+              }
+            },
+            "originalIssue": {
+              "baseFare": 0,
+              "freeflow": "string",
+              "issue": [
+                {
+                  "airlineCode": "string",
+                  "amount": 0,
+                  "cityCode": "string",
+                  "coupon1": "string",
+                  "coupon2": "string",
+                  "coupon3": "string",
+                  "coupon4": "string",
+                  "currency": "string",
+                  "dateOfIssue": "string",
+                  "documentCD": 0,
+                  "documentNumber": "string",
+                  "exchangeDocumentCD": 0,
+                  "iataNumber": "string",
+                  "lastConjunction": 0,
+                  "lastConjunction1": "string",
+                  "lastConjunction2": "string",
+                  "lastConjunction3": "string",
+                  "lastConjunction4": "string"
+                }
+              ],
+              "passengerType": "string",
+              "penalty": 0,
+              "totalTax": 0,
+              "voucherIndicator": "string"
+            },
+            "pnrSecurity": {
+              "indicator": "string",
+              "security": [
+                {
+                  "accessMode": "string",
+                  "identification": "string"
+                }
+              ],
+              "securityInfo": {
+                "agentCode": "string",
+                "creationDate": "string",
+                "officeId": "string"
+              }
+            },
+            "printer": {
+              "identifierDetail": {
+                "name": "string",
+                "network": "string"
+              },
+              "office": "string",
+              "teletypeAddress": "string"
+            },
+            "referenceForDataElement": {
+              "reference": [
+                {
+                  "number": "string",
+                  "qualifier": "string"
+                }
+              ]
+            },
+            "seatGroup": {
+              "railSeatPreferences": {
+                "classDetails": {
+                  "bookingClass": "string",
+                  "code": "string"
+                },
+                "seatConfiguration": {
+                  "coachType": "string",
+                  "seatDeck": "string",
+                  "seatDirection": "string",
+                  "seatEquipment": "string",
+                  "seatPosition": "string",
+                  "seatSpace": "string",
+                  "specialPassengerType": [
+                    "string"
+                  ]
+                },
+                "seatRequestFunction": "string",
+                "smokingIndicator": "string"
+              },
+              "railSeatReferenceInformation": [
+                {
+                  "railSeatReferenceDetails": {
+                    "coachNumber": "string",
+                    "deckNumber": "string",
+                    "seatNumber": "string"
+                  }
+                }
+              ],
+              "seatRequest": {
+                "seat": {
+                  "boardpoint": "string",
+                  "offpoint": "string",
+                  "qualifier": "string",
+                  "type": "string"
+                },
+                "special": [
+                  {
+                    "data": "string",
+                    "seatType": [
+                      "string"
+                    ]
+                  }
+                ]
+              }
+            },
+            "serviceDetails": [
+              {
+                "statusDetails": {
+                  "indicator": "string"
+                }
+              }
+            ],
+            "serviceRequest": {
+              "ssr": {
+                "boardpoint": "string",
+                "companyId": "string",
+                "freetext": [
+                  "string"
+                ],
+                "indicator": "string",
+                "offpoint": "string",
+                "quantity": 0,
+                "status": "string",
+                "type": "string"
+              },
+              "ssrb": [
+                {
+                  "data": "string",
+                  "seatType": [
+                    "string"
+                  ]
+                }
+              ]
+            },
+            "structuredAddress": {
+              "address": {
+                "optionA1": "string",
+                "optionTextA1": "string"
+              },
+              "informationType": "string",
+              "optionalData": [
+                {
+                  "option": "string",
+                  "optionText": "string"
+                }
+              ]
+            },
+            "ticketElement": {
+              "passengerType": "string",
+              "printOptions": "string",
+              "ticket": {
+                "airlineCode": "string",
+                "date": "string",
+                "freetext": "string",
+                "indicator": "string",
+                "officeId": "string",
+                "queueCategory": "string",
+                "queueNumber": "string",
+                "sitaAddress": [
+                  "string"
+                ],
+                "time": "string"
+              }
+            },
+            "ticketingCarrier": {
+              "carrier": {
+                "airlineCode": "string",
+                "language": "string",
+                "optionInfo": "string",
+                "printerNumber": "string"
+              },
+              "passengerType": "string"
+            },
+            "tourCode": {
+              "formatedTour": {
+                "approvalCode": "string",
+                "companyId": "string",
+                "partyId": "string",
+                "productId": "string",
+                "year": 0
+              },
+              "freeFormatTour": {
+                "freetext": "string",
+                "indicator": "string"
+              },
+              "netRemit": {
+                "freetext": "string",
+                "indicator": "string"
+              },
+              "passengerType": "string"
+            }
+          }
+        ],
+        "marker1": {}
+      },
+      "originDestinationDetails": [
+        {
+          "itineraryInfo": [
+            {
+              "airAuxItinerary": {
+                "freetextItinerary": {
+                  "freetextDetail": {
+                    "companyId": "string",
+                    "status": "string",
+                    "subjectQualifier": "string",
+                    "type": "string"
+                  },
+                  "longFreetext": "string"
+                },
+                "messageAction": {
+                  "business": {
+                    "function": "string"
+                  }
+                },
+                "relatedProduct": {
+                  "quantity": 0,
+                  "status": "string"
+                },
+                "reservationInfoSell": {
+                  "reservation": {
+                    "companyId": "string",
+                    "controlNumber": "string"
+                  }
+                },
+                "selectionDetailsAir": {
+                  "selection": [
+                    {
+                      "option": "string"
+                    }
+                  ]
+                },
+                "travelProduct": {
+                  "boardpointDetail": {
+                    "cityCode": "string",
+                    "cityName": "string"
+                  },
+                  "company": {
+                    "identification": "string",
+                    "secondIdentification": "string"
+                  },
+                  "flightTypeDetails": {
+                    "flightIndicator": "string"
+                  },
+                  "offpointDetail": {
+                    "cityCode": "string",
+                    "cityName": "string"
+                  },
+                  "processingIndicator": "string",
+                  "product": {
+                    "arrDate": "string",
+                    "arrTime": "string",
+                    "depDate": "string",
+                    "depTime": "string"
+                  },
+                  "productDetails": {
+                    "classOfService": "string",
+                    "description": "string",
+                    "identification": "string",
+                    "subtype": "string"
+                  }
+                }
+              },
+              "elementManagementItinerary": {
+                "reference": {
+                  "number": "string",
+                  "qualifier": "string"
+                },
+                "segmentName": "string"
+              },
+              "referenceForSegment": {
+                "reference": [
+                  {
+                    "number": "string",
+                    "qualifier": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "originDestination": {
+            "destination": "string",
+            "origin": "string"
+          }
+        }
+      ],
+      "pnrActions": {
+        "optionCode": [
+          0
+        ]
+      },
+      "reservationInfo": {
+        "reservation": {
+          "companyId": "string",
+          "controlNumber": "string"
+        }
+      },
+      "travellerInfo": [
+        {
+          "elementManagementPassenger": {
+            "reference": {
+              "number": "string",
+              "qualifier": "string"
+            },
+            "segmentName": "string"
+          },
+          "enhancedPassengerData": [
+            {
+              "dateOfBirthInEnhancedPaxData": {
+                "dateAndTimeDetails": {
+                  "date": "string",
+                  "qualifier": "string"
+                }
+              },
+              "enhancedTravellerInformation": {
+                "otherPaxNamesDetails": [
+                  {
+                    "givenName": "string",
+                    "nameType": "string",
+                    "referenceName": "string",
+                    "surname": "string",
+                    "title": "string"
+                  }
+                ],
+                "travellerNameInfo": {
+                  "age": 0,
+                  "infantIndicator": "string",
+                  "otherType": "string",
+                  "qualifier": "string",
+                  "quantity": 0,
+                  "travellerIdentificationCode": "string",
+                  "type": "string"
+                }
+              }
+            }
+          ],
+          "passengerData": [
+            {
+              "dateOfBirth": {
+                "dateAndTimeDetails": {
+                  "date": "string",
+                  "qualifier": "string"
+                }
+              },
+              "travellerInformation": {
+                "passenger": [
+                  {
+                    "firstName": "string",
+                    "identificationCode": "string",
+                    "infantIndicator": "string",
+                    "type": "string"
+                  }
+                ],
+                "traveller": {
+                  "qualifier": "string",
+                  "quantity": 0,
+                  "surname": "string"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  

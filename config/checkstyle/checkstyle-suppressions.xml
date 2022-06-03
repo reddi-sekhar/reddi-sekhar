@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+  "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_2.dtd">
+
+<suppressions>
+  <suppress checks="MethodName" files=".*Test.java$"/>
+  <!-- add TQ #2934 -->
+  <suppress checks=".*" files="src[\\/]main[\\/]java[\\/]jp[\\/]co[\\/]ana[\\/]cas[\\/]resources[\\/]"/>
+</suppressions>

@@ -1,0 +1,4677 @@
+{
+  "soapBody": {
+    "pnrreply": {
+      "dataElementsMaster": {
+        "dataElementsIndiv": [
+          {
+            "accessLevel": [
+              {
+                "securityDetails": {
+                  "accessMode": "string",
+                  "inhouseIdentification": "string",
+                  "typeOfEntity": "string"
+                }
+              }
+            ],
+            "accounting": {
+              "account": {
+                "clientReference": "string",
+                "companyNumber": "string",
+                "costNumber": "string",
+                "gsttaxDetails": "string",
+                "number": "string"
+              },
+              "accountNumberOfUnits": "string"
+            },
+            "cityPair": {
+              "arrLocation": {
+                "firstLocationDetails": {
+                  "code": "string",
+                  "qualifier": "string"
+                },
+                "locationDescription": {
+                  "code": "string",
+                  "qualifier": "string"
+                },
+                "locationType": "string"
+              },
+              "depLocation": {
+                "firstLocationDetails": {
+                  "code": "string",
+                  "qualifier": "string"
+                },
+                "locationDescription": {
+                  "code": "string",
+                  "qualifier": "string"
+                },
+                "locationType": "string"
+              }
+            },
+            "dateAndTimeInformation": {
+              "dateAndTime": {
+                "firstDate": "string",
+                "locationIdentification": "string",
+                "movementType": "string"
+              }
+            },
+            "elementErrorInformation": {
+              "errorOrWarningCodeDetails": {
+                "errorDetails": {
+                  "errorCategory": "string",
+                  "errorCode": "string",
+                  "errorCodeOwner": "string"
+                }
+              },
+              "errorWarningDescription": {
+                "freeText": [
+                  "string"
+                ],
+                "freeTextDetails": {
+                  "encoding": "string",
+                  "informationType": "string",
+                  "language": "string",
+                  "source": "string",
+                  "textSubjectQualifier": "string"
+                }
+              }
+            },
+            "elementManagementData": {
+              "lineNumber": 0,
+              "reference": {
+                "number": 0,
+                "qualifier": "string"
+              },
+              "segmentName": "string",
+              "status": "string"
+            },
+            "elementsIndicators": [
+              {
+                "statusDetails": {
+                  "indicator": "string"
+                }
+              }
+            ],
+            "eltPosDetails": {
+              "agentId": {
+                "companyIdNumber": "string",
+                "internalIdDetails": [
+                  {
+                    "inhouseId": "string",
+                    "type": "string"
+                  }
+                ]
+              },
+              "pointOfSaleDate": {
+                "dateTime": {
+                  "day": "string",
+                  "hour": "string",
+                  "minutes": "string",
+                  "month": "string",
+                  "year": "string"
+                },
+                "timeMode": "string"
+              },
+              "pointOfSaleInformationType": {
+                "pointOfSale": {
+                  "partyCodeQualifier": "string"
+                }
+              },
+              "sbrPreferences": {
+                "userPreferences": {
+                  "codedCountry": "string",
+                  "codedCurrency": "string",
+                  "codedLanguage": "string"
+                }
+              },
+              "sbrSystemDetails": {
+                "deliveringSystem": {
+                  "companyId": "string",
+                  "locationId": "string"
+                },
+                "workstationId": "string"
+              },
+              "sbrUserIdentification": {
+                "originIdentification": {
+                  "inHouseIdentification1": "string",
+                  "inHouseIdentification2": 0,
+                  "originatorId": "string"
+                },
+                "originatorTypeCode": "string"
+              }
+            },
+            "extendedRemark": {
+              "structuredRemark": {
+                "category": "string",
+                "encoding": "string",
+                "freetext": "string",
+                "status": "string",
+                "type": "string"
+              }
+            },
+            "frequentFlyerInformationGroup": {
+              "bookingClassInformation": {
+                "bookingClassDetails": {
+                  "designator": "string",
+                  "option": "string"
+                }
+              },
+              "discountInformation": {
+                "discountDetails": {
+                  "discountCode": "string"
+                }
+              },
+              "frequentTravellerInfo": {
+                "frequentTraveler": {
+                  "company": "string",
+                  "customerValue": 0,
+                  "membershipNumber": "string"
+                },
+                "priorityDetails": [
+                  {
+                    "priorityCode": "string",
+                    "qualifier": "string",
+                    "tierDescription": "string",
+                    "tierLevel": "string"
+                  }
+                ],
+                "redemptionInformation": {
+                  "approvalCode": "string",
+                  "category": "string",
+                  "rateClass": "string",
+                  "sequenceNumber": "string",
+                  "versionNumber": "string"
+                }
+              }
+            },
+            "mcoRecord": {
+              "groupOfFareElements": [
+                {
+                  "fareElementData": {
+                    "freeText": "string",
+                    "freeTextDetails": {
+                      "companyId": "string",
+                      "encoding": "string",
+                      "informationType": "string",
+                      "language": "string",
+                      "source": "string",
+                      "status": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  },
+                  "sequenceNumber": {
+                    "actionRequest": "string",
+                    "sequenceDetails": {
+                      "number": "string"
+                    }
+                  }
+                }
+              ],
+              "mcoInformation": {
+                "freeText": "string",
+                "freeTextDetails": {
+                  "companyId": "string",
+                  "encoding": "string",
+                  "informationType": "string",
+                  "language": "string",
+                  "source": "string",
+                  "status": "string",
+                  "textSubjectQualifier": "string"
+                }
+              },
+              "mcoType": {
+                "type": "string"
+              }
+            },
+            "miscellaneousRemarks": {
+              "individualSecurity": [
+                {
+                  "accessMode": "string",
+                  "office": "string",
+                  "officeIdentifier": "string"
+                }
+              ],
+              "remarks": {
+                "category": "string",
+                "freetext": "string",
+                "providerType": "string",
+                "type": "string"
+              }
+            },
+            "monetaryInformation": [
+              {
+                "information": {
+                  "amount": 0,
+                  "currencyCode": "string",
+                  "qualifier": "string"
+                }
+              }
+            ],
+            "optionElement": {
+              "individualSecurity": [
+                {
+                  "accessMode": "string",
+                  "office": "string",
+                  "officeIdentifier": "string"
+                }
+              ],
+              "optionElementInfo": {
+                "category": 0,
+                "date": "string",
+                "freetext": "string",
+                "mainOffice": "string",
+                "queue": 0,
+                "time": "string"
+              }
+            },
+            "otherDataFreetext": [
+              {
+                "freetextDetail": {
+                  "companyId": "string",
+                  "status": "string",
+                  "subjectQualifier": "string",
+                  "type": "string"
+                },
+                "longFreetext": "string"
+              }
+            ],
+            "pnrSecurity": {
+              "indicator": "string",
+              "security": [
+                {
+                  "accessMode": "string",
+                  "identification": "string"
+                }
+              ],
+              "securityInfo": {
+                "agentCode": "string",
+                "creationDate": "string",
+                "officeId": "string"
+              }
+            },
+            "railSeatDetails": [
+              {
+                "railSeatDenomination": {
+                  "freeText": "string",
+                  "freeTextDetails": {
+                    "encoding": "string",
+                    "language": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                },
+                "railSeatReferenceInformation": {
+                  "railSeatReferenceDetails": {
+                    "coachNumber": "string",
+                    "deckNumber": "string",
+                    "seatNumber": "string"
+                  }
+                }
+              }
+            ],
+            "railSeatPreferences": {
+              "classDetails": {
+                "bookingClass": "string",
+                "code": "string"
+              },
+              "seatConfiguration": {
+                "coachType": "string",
+                "seatDeck": "string",
+                "seatDirection": "string",
+                "seatEquipment": "string",
+                "seatPosition": "string",
+                "seatSpace": "string",
+                "specialPassengerType": [
+                  "string"
+                ]
+              },
+              "seatRequestFunction": "string",
+              "sleeperDescription": {
+                "berthDeck": "string",
+                "cabinOccupancy": "string",
+                "cabinPosition": "string",
+                "cabinShareType": "string"
+              },
+              "smokingIndicator": "string"
+            },
+            "reasonForIssuanceCode": {
+              "itemNumber": "string",
+              "otherSpecialCondition": "string",
+              "specialCondition": "string"
+            },
+            "referenceForDataElement": {
+              "reference": [
+                {
+                  "number": "string",
+                  "qualifier": "string"
+                }
+              ]
+            },
+            "referencedRecord": {
+              "referencedReservationInfo": {
+                "reservation": {
+                  "companyId": "string",
+                  "controlNumber": "string",
+                  "controlType": "string",
+                  "date": "string",
+                  "time": "string"
+                }
+              },
+              "securityInformation": {
+                "cityCode": "string",
+                "queueingInformation": {
+                  "location": "string",
+                  "queueingOfficeId": "string"
+                },
+                "responsibilityInformation": {
+                  "agentId": "string",
+                  "iataCode": 0,
+                  "officeId": "string",
+                  "typeOfPnrElement": "string"
+                },
+                "secondRpInformation": {
+                  "agentSignature": "string",
+                  "creationDate": "string",
+                  "creationOfficeId": "string",
+                  "creationTime": "string",
+                  "creatorIataCode": 0
+                }
+              }
+            },
+            "seatPaxInfo": [
+              {
+                "crossRef": {
+                  "reference": [
+                    {
+                      "number": "string",
+                      "qualifier": "string"
+                    }
+                  ]
+                },
+                "seatPaxDetails": {
+                  "genericDetails": {
+                    "seatCharacteristic": [
+                      "string"
+                    ]
+                  }
+                },
+                "seatPaxIndicator": {
+                  "statusDetails": {
+                    "indicator": "string"
+                  }
+                }
+              }
+            ],
+            "serviceRequest": {
+              "ssr": {
+                "boardpoint": "string",
+                "companyId": "string",
+                "freeText": [
+                  "string"
+                ],
+                "indicator": "string",
+                "offpoint": "string",
+                "processingIndicator": "string",
+                "quantity": 0,
+                "status": "string",
+                "type": "string"
+              },
+              "ssrb": [
+                {
+                  "crossRef": "string",
+                  "data": "string",
+                  "seatType": [
+                    "string"
+                  ]
+                }
+              ]
+            },
+            "ssrPackageInformation": [
+              {
+                "bookingMethod": {
+                  "actionRequestCode": "string"
+                },
+                "elementCounter": {
+                  "itemNumberDetails": [
+                    {
+                      "number": "string"
+                    }
+                  ]
+                },
+                "elementReference": {
+                  "referenceDetails": [
+                    {
+                      "type": "string",
+                      "value": "string"
+                    }
+                  ]
+                },
+                "pricingInformation": {
+                  "itemNumber": "string",
+                  "otherSpecialCondition": "string",
+                  "specialCondition": "string"
+                },
+                "serviceIdentifier": {
+                  "quotaInfo": {
+                    "availability": 0,
+                    "counter": 0,
+                    "maxQuantity": 0,
+                    "quotaCounterName": "string",
+                    "quotaGrade": "string",
+                    "quotaNotReachedMsgNb": "string",
+                    "quotaReachedMsgNb": "string",
+                    "quotaReachedReplyStatus": "string",
+                    "quotaType": "string"
+                  },
+                  "seatDetails": {
+                    "crossRef": "string",
+                    "measureUnitQualifier": "string",
+                    "seatCharacteristics": [
+                      "string"
+                    ],
+                    "seatNumber": "string"
+                  },
+                  "specialRequirementsInfo": {
+                    "actionCode": "string",
+                    "airlineCode": "string",
+                    "boardPoint": "string",
+                    "numberInParty": 0,
+                    "offPoint": "string",
+                    "otherServiceType": "string",
+                    "serviceFreeText": [
+                      "string"
+                    ],
+                    "serviceType": "string",
+                    "ssrCode": "string"
+                  }
+                },
+                "tableValues": [
+                  {
+                    "criteriaDetails": [
+                      {
+                        "attributeDescription": "string",
+                        "attributeType": "string"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "structuredAddress": {
+              "address": [
+                {
+                  "option": "string",
+                  "optionText": "string"
+                }
+              ],
+              "informationType": "string"
+            },
+            "structuredFop": [
+              {
+                "fopFreeflow": {
+                  "freeText": "string",
+                  "freeTextDetails": {
+                    "encoding": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                },
+                "fopPNRDetails": {
+                  "fopDetails": [
+                    {
+                      "fopBillingCode": "string",
+                      "fopCode": "string",
+                      "fopEdiCode": "string",
+                      "fopElecTicketingCode": "string",
+                      "fopMapTable": "string",
+                      "fopPrintedCode": "string",
+                      "fopReportingCode": "string",
+                      "fopStatus": "string"
+                    }
+                  ]
+                },
+                "fopSequenceNumber": {
+                  "sequenceDetails": {
+                    "number": 0
+                  }
+                },
+                "paymentModule": {
+                  "dummy": {},
+                  "groupUsage": {
+                    "attributeDetails": {
+                      "attributeType": "string"
+                    }
+                  },
+                  "mopDetailedData": {
+                    "creditCardDetailedData": {
+                      "approvalDetails": {
+                        "approvalCodeData": {
+                          "approvalCode": "string",
+                          "sourceOfApproval": "string"
+                        }
+                      },
+                      "authorisationInformation": {
+                        "transactionDetails": {
+                          "code": "string",
+                          "issueIndicator": "string",
+                          "transmissionControlNumber": "string",
+                          "type": "string"
+                        }
+                      },
+                      "authorisationSupplementaryData": {
+                        "msgRef": {
+                          "authorCharacteristicIndicator": "string",
+                          "authorResponseCode": "string",
+                          "cardLevelResult": "string",
+                          "retrievalReferenceNumber": "string",
+                          "terminalType": "string"
+                        },
+                        "respIdentification": {
+                          "banknetDate": "string",
+                          "banknetRefNumber": "string",
+                          "transacIdentifier": "string",
+                          "validationCode": "string"
+                        }
+                      },
+                      "browserData": {
+                        "browserProperties": {
+                          "deviceCategory": 0
+                        },
+                        "freeFlowBrowserData": [
+                          {
+                            "freeText": [
+                              "string"
+                            ],
+                            "freeTextDetails": {
+                              "encoding": "string",
+                              "informationType": "string",
+                              "source": "string",
+                              "textSubjectQualifier": "string"
+                            }
+                          }
+                        ]
+                      },
+                      "cardSupplementaryData": [
+                        {
+                          "criteriaDetails": {
+                            "attributeDescription": "string",
+                            "attributeType": "string"
+                          },
+                          "criteriaSetType": "string"
+                        }
+                      ],
+                      "localDateTime": [
+                        {
+                          "businessSemantic": "string",
+                          "dateTime": {
+                            "day": 0,
+                            "hour": 0,
+                            "milliseconds": 0,
+                            "minutes": 0,
+                            "month": 0,
+                            "seconds": 0,
+                            "year": "string"
+                          },
+                          "timeMode": "string",
+                          "timeZoneInfo": {
+                            "code": 0,
+                            "countryCode": "string",
+                            "suffix": "string"
+                          }
+                        }
+                      ],
+                      "tdsInformation": {
+                        "acsURL": {
+                          "communication": {
+                            "urlAddress": "string",
+                            "urlType": "string"
+                          }
+                        },
+                        "authenticationData": {
+                          "authenticationDataDetails": {
+                            "authenticationIndicator": "string",
+                            "caavAlgorithm": 0,
+                            "creditCardCompany": "string",
+                            "pares": "string",
+                            "veres": "string"
+                          }
+                        },
+                        "tdsBlobData": [
+                          {
+                            "tdsBlbData": {
+                              "binaryData": "string",
+                              "dataLength": 0,
+                              "dataType": "string"
+                            },
+                            "tdsBlbIdentifier": {
+                              "referenceDetails": {
+                                "value": "string"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "transactionStatus": [
+                        {
+                          "errorOrWarningCodeDetails": {
+                            "errorDetails": {
+                              "errorCategory": "string",
+                              "errorCode": "string"
+                            }
+                          },
+                          "errorWarningDescription": {
+                            "freeText": "string",
+                            "freeTextDetails": {
+                              "encoding": "string",
+                              "source": "string",
+                              "textSubjectQualifier": "string"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "dummy": {},
+                    "fopInformation": {
+                      "formOfPayment": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "mopInformation": {
+                    "creditCardData": {
+                      "cardHolderAddress": {
+                        "addressDetails": {
+                          "format": "string",
+                          "line1": "string",
+                          "line2": "string",
+                          "line3": "string",
+                          "line4": "string",
+                          "line5": "string",
+                          "line6": "string"
+                        },
+                        "city": "string",
+                        "countryCode": "string",
+                        "zipCode": "string"
+                      },
+                      "creditCardDetails": {
+                        "ccInfo": {
+                          "cardCountryOfIssuance": "string",
+                          "cardNumber": "string",
+                          "ccHolderName": "string",
+                          "endDate": "string",
+                          "expiryDate": "string",
+                          "issueNumber": 0,
+                          "issuingBankLongName": "string",
+                          "issuingBankName": "string",
+                          "pinCode": "string",
+                          "rawTrackData": "string",
+                          "securityId": "string",
+                          "startDate": "string",
+                          "track1": "string",
+                          "track2": "string",
+                          "track3": "string",
+                          "vendorCode": "string",
+                          "vendorCodeSubType": "string"
+                        }
+                      },
+                      "fortknoxIds": [
+                        {
+                          "referenceDetails": {
+                            "type": "string",
+                            "value": "string"
+                          }
+                        }
+                      ]
+                    },
+                    "dummy": {},
+                    "fopInformation": {
+                      "formOfPayment": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "paymentData": {
+                    "distributionChannelInformation": {
+                      "distributionChannel": {
+                        "accessType": 0,
+                        "distributionChannelField": 0,
+                        "subGroup": 0
+                      },
+                      "terminalID": "string"
+                    },
+                    "expirationPeriod": {
+                      "quantityDetails": [
+                        {
+                          "qualifier": "string",
+                          "unit": "string",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "extendedPaymentInfo": {
+                      "extendedPaymentDetails": {
+                        "instalmentsDatrDateFormat": "string",
+                        "instalmentsFrequency": "string",
+                        "instalmentsNumber": 0,
+                        "instalmentsStartDate": "string"
+                      }
+                    },
+                    "fraudScreeningData": {
+                      "billingAddress": {
+                        "addressDetails": {
+                          "format": "string",
+                          "line1": "string",
+                          "line2": "string",
+                          "line3": "string",
+                          "line4": "string",
+                          "line5": "string",
+                          "line6": "string"
+                        },
+                        "city": "string",
+                        "countryCode": "string",
+                        "zipCode": "string"
+                      },
+                      "formOfIdDetails": [
+                        {
+                          "referenceDetails": {
+                            "type": "string",
+                            "value": "string"
+                          }
+                        }
+                      ],
+                      "fraudScreening": {
+                        "statusInformation": {
+                          "action": "string",
+                          "indicator": "string"
+                        }
+                      },
+                      "ipAdress": {
+                        "deviceIdentification": {
+                          "address": "string",
+                          "qualifier": "string"
+                        }
+                      },
+                      "merchantURL": {
+                        "communication": {
+                          "urlAddress": "string",
+                          "urlType": "string"
+                        }
+                      },
+                      "payerDateOfBirth": {
+                        "dateTime": {
+                          "day": 0,
+                          "month": 0,
+                          "year": "string"
+                        }
+                      },
+                      "payerName": {
+                        "otherPaxDetails": {
+                          "givenName": "string"
+                        },
+                        "paxDetails": {
+                          "surname": "string"
+                        }
+                      },
+                      "payerPhoneOrEmail": [
+                        {
+                          "emailAddress": "string",
+                          "phoneOrEmailType": "string",
+                          "telephoneNumberDetails": {
+                            "telephoneNumber": "string"
+                          }
+                        }
+                      ],
+                      "shopperSession": {
+                        "deliveringSystem": {
+                          "companyId": "string"
+                        },
+                        "workstationId": "string"
+                      }
+                    },
+                    "merchantInformation": {
+                      "companyCode": "string",
+                      "companyNumericCode": "string"
+                    },
+                    "monetaryInformation": [
+                      {
+                        "monetaryDetails": {
+                          "amount": 0,
+                          "currency": "string",
+                          "typeQualifier": "string"
+                        },
+                        "otherMonetaryDetails": [
+                          {
+                            "amount": 0,
+                            "currency": "string",
+                            "typeQualifier": "string"
+                          }
+                        ]
+                      }
+                    ],
+                    "paymentDataMap": [
+                      {
+                        "criteriaDetails": {
+                          "attributeDescription": "string",
+                          "attributeType": "string"
+                        },
+                        "criteriaSetType": "string"
+                      }
+                    ],
+                    "paymentId": [
+                      {
+                        "referenceType": "string",
+                        "uniqueReference": "string"
+                      }
+                    ],
+                    "purchaseDescription": {
+                      "freeText": [
+                        "string"
+                      ],
+                      "freeTextDetails": {
+                        "encoding": "string",
+                        "source": "string",
+                        "textSubjectQualifier": "string"
+                      }
+                    },
+                    "transactionDateTime": {
+                      "businessSemantic": "string",
+                      "dateTime": {
+                        "day": "string",
+                        "hour": "string",
+                        "milliseconds": 0,
+                        "minutes": "string",
+                        "month": "string",
+                        "seconds": 0,
+                        "year": "string"
+                      }
+                    }
+                  },
+                  "paymentSupplementaryData": [
+                    {
+                      "attributeDetails": [
+                        {
+                          "attributeDescription": "string",
+                          "attributeType": "string"
+                        }
+                      ],
+                      "attributeFunction": "string"
+                    }
+                  ]
+                },
+                "pnrSupplementaryData": [
+                  {
+                    "dataAndSwitchMap": {
+                      "criteriaDetails": [
+                        {
+                          "attributeDescription": "string",
+                          "attributeType": "string"
+                        }
+                      ],
+                      "criteriaSetType": "string"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ticketElement": {
+              "passengerType": "string",
+              "printOptions": "string",
+              "ticket": {
+                "airlineCode": "string",
+                "date": "string",
+                "electronicTicketFlag": "string",
+                "freetext": "string",
+                "indicator": "string",
+                "officeId": "string",
+                "queueCategory": "string",
+                "queueNumber": "string",
+                "sitaAddress": [
+                  "string"
+                ],
+                "time": "string",
+                "transactionFlag": "string"
+              }
+            },
+            "totalPrice": {
+              "additionnalChargeInformation": [
+                {
+                  "additionnalCharge": {
+                    "amount": 0,
+                    "qualifier": "string"
+                  }
+                }
+              ],
+              "externalRef": {
+                "referenceDetails": {
+                  "type": "string",
+                  "value": "string"
+                }
+              },
+              "mainPrice": {
+                "priceDetails": {
+                  "currencyCode": "string",
+                  "priceAmount": 0,
+                  "priceQualifier": "string"
+                }
+              },
+              "methodOfDelivery": {
+                "deliveryDetails": {
+                  "packageDetails": {
+                    "packageDesc": "string"
+                  },
+                  "packageType": "string"
+                },
+                "elementManagement": {
+                  "reference": {
+                    "number": 0,
+                    "qualifier": "string"
+                  }
+                }
+              },
+              "optionalBooking": {
+                "businessSemantic": "string",
+                "dateTime": {
+                  "day": "string",
+                  "hour": "string",
+                  "minutes": "string",
+                  "month": "string",
+                  "seconds": 0,
+                  "year": "string"
+                }
+              },
+              "otherPrices": [
+                {
+                  "priceDetails": {
+                    "priceAmount": 0,
+                    "priceQualifier": "string"
+                  }
+                }
+              ],
+              "productDescription": {
+                "product": {
+                  "productData": {
+                    "name": "string",
+                    "number": "string"
+                  }
+                },
+                "productRestriction": [
+                  {
+                    "restrictionDetails": {
+                      "code": "string",
+                      "description": "string",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "providerCode": {
+                "companyCode": "string",
+                "travelSector": "string"
+              },
+              "rateCodeInformation": {
+                "rateCode": "string"
+              }
+            }
+          }
+        ],
+        "marker2": {}
+      },
+      "dcsData": {
+        "legSection": [
+          {
+            "dcsLegInfo": {
+              "acceptanceChannel": {
+                "acceptanceOrigin": {
+                  "originatorTypeCode": "string"
+                },
+                "applicationType": {
+                  "applicationDetails": {
+                    "internalId": "string",
+                    "versionNumber": "string"
+                  }
+                }
+              },
+              "accregReason": [
+                {
+                  "deliveryInformation": {
+                    "freeText": [
+                      "string"
+                    ],
+                    "freeTextQualification": {
+                      "companyId": "string",
+                      "informationType": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  },
+                  "reasons": {
+                    "attributeDetails": {
+                      "attributeDescription": "string",
+                      "attributeType": "string"
+                    }
+                  }
+                }
+              ],
+              "compensationData": {
+                "compensationDetails": {
+                  "amount": 0,
+                  "currency": "string",
+                  "form": "string",
+                  "freeText": "string",
+                  "type": "string"
+                }
+              },
+              "leg": {
+                "destination": "string",
+                "origin": "string"
+              },
+              "legPosition": {
+                "itemNumber": 0
+              },
+              "paxStatus": {
+                "statusDetails": [
+                  {
+                    "indicator": "string",
+                    "type": "string"
+                  }
+                ]
+              },
+              "paxType": {
+                "referenceDetails": {
+                  "type": "string"
+                }
+              },
+              "regradeCabin": {
+                "cabinCode": "string"
+              },
+              "seatDelivery": {
+                "seatDetails": {
+                  "seatCharacteristic": [
+                    "string"
+                  ],
+                  "seatNumber": "string"
+                }
+              }
+            },
+            "elementManagementStructData": {
+              "elementReference": {
+                "number": 0,
+                "qualifier": "string"
+              },
+              "lineNumber": 0,
+              "segmentName": "string"
+            },
+            "referenceForStructDataElement": {
+              "reference": [
+                {
+                  "number": "string",
+                  "qualifier": "string"
+                }
+              ]
+            }
+          }
+        ],
+        "markerLeg": {},
+        "markerPax": {},
+        "markerSegment": {},
+        "segmentSection": [
+          {
+            "dcsSegmentInfo": {
+              "booking": {},
+              "paxType": {
+                "referenceDetails": {
+                  "type": "string"
+                }
+              },
+              "typeOfCOP": {
+                "attributeDetails": {
+                  "attributeType": "string"
+                }
+              }
+            },
+            "elementManagementStructData": {
+              "elementReference": {
+                "number": 0,
+                "qualifier": "string"
+              },
+              "lineNumber": 0,
+              "segmentName": "string"
+            },
+            "referenceForStructDataElement": {
+              "reference": [
+                {
+                  "number": "string",
+                  "qualifier": "string"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "freeFormText": [
+        {
+          "freetextDetail": {
+            "companyId": "string",
+            "language": "string",
+            "subjectQualifier": "string",
+            "type": "string"
+          },
+          "text": [
+            "string"
+          ]
+        }
+      ],
+      "freetextData": [
+        {
+          "freetextDetail": {
+            "companyId": "string",
+            "status": "string",
+            "subjectQualifier": "string",
+            "type": "string"
+          },
+          "longFreetext": "string"
+        }
+      ],
+      "generalErrorInfo": [
+        {
+          "errorOrWarningCodeDetails": {
+            "errorDetails": {
+              "errorCategory": "string",
+              "errorCode": "string",
+              "errorCodeOwner": "string"
+            }
+          },
+          "errorWarningDescription": {
+            "freeText": [
+              "string"
+            ],
+            "freeTextDetails": {
+              "encoding": "string",
+              "informationType": "string",
+              "language": "string",
+              "source": "string",
+              "textSubjectQualifier": "string"
+            }
+          }
+        }
+      ],
+      "historyData": [
+        {
+          "currentRecord": 0,
+          "elementData": "string",
+          "elementType": "string",
+          "previousRecord": 0
+        }
+      ],
+      "numberOfUnits": {
+        "numberDetail": {
+          "number": 0,
+          "qualifier": "string"
+        }
+      },
+      "originDestinationDetails": [
+        {
+          "itineraryInfo": [
+            {
+              "cabinDetails": {
+                "cabinDetails": {
+                  "classDesignator": "string"
+                }
+              },
+              "carbonDioxydeInfo": {
+                "carbonDioxydeAmount": {
+                  "quantityDetails": {
+                    "qualifier": "string",
+                    "unit": "string",
+                    "value": 0
+                  }
+                },
+                "carbonDioxydeInfoSource": {
+                  "freeText": [
+                    "string"
+                  ],
+                  "freeTextDetails": {
+                    "encoding": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                }
+              },
+              "country": {
+                "destinationCountryCode": [
+                  "string"
+                ]
+              },
+              "customerTransactionData": {
+                "codeShare": {
+                  "airline": "string",
+                  "cascadingIndicator": 0,
+                  "flightNumber": 0,
+                  "inventory": "string",
+                  "sellingClass": "string",
+                  "suffix": "string",
+                  "type": "string"
+                },
+                "connection": 0,
+                "flight": {
+                  "cabin": "string",
+                  "flightType": "string",
+                  "overbooking": "string",
+                  "subclass": 0
+                },
+                "pos": {
+                  "classification": "string",
+                  "crs": "string",
+                  "pointOfSaleCountry": "string"
+                }
+              },
+              "dateTimeDetails": {
+                "dateAndTimeDetails": [
+                  {
+                    "date": "string",
+                    "qualifier": "string",
+                    "time": "string"
+                  }
+                ]
+              },
+              "distributionMethod": {
+                "distributionMethodDetails": {
+                  "distriProductCode": "string"
+                }
+              },
+              "elementManagementItinerary": {
+                "lineNumber": 0,
+                "reference": {
+                  "number": 0,
+                  "qualifier": "string"
+                },
+                "segmentName": "string",
+                "status": "string"
+              },
+              "elementsIndicators": {
+                "statusInformation": {
+                  "indicator": "string"
+                }
+              },
+              "errorInfo": {
+                "errorOrWarningCodeDetails": {
+                  "errorDetails": {
+                    "errorCategory": "string",
+                    "errorCode": "string",
+                    "errorCodeOwner": "string"
+                  }
+                },
+                "errorWarningDescription": {
+                  "freeText": [
+                    "string"
+                  ],
+                  "freeTextDetails": {
+                    "encoding": "string",
+                    "informationType": "string",
+                    "language": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                }
+              },
+              "ferryLegInformation": {
+                "accomodationPackageInfoGroup": [
+                  {
+                    "areaCodeInfo": {
+                      "firstLocationDetails": {
+                        "code": "string"
+                      },
+                      "locationType": "string"
+                    },
+                    "hotelCheckInInformation": {
+                      "dateTime": {
+                        "day": "string",
+                        "month": "string",
+                        "year": "string"
+                      }
+                    },
+                    "hotelInformation": {
+                      "hotelReference": {
+                        "hotelCode": "string"
+                      }
+                    },
+                    "hotelItemPrice": {
+                      "priceDetails": {
+                        "currencyCode": "string",
+                        "priceAmount": 0,
+                        "priceQualifier": "string"
+                      }
+                    },
+                    "numberOfNights": {
+                      "quantityDetails": {
+                        "numberOfUnit": 0
+                      }
+                    },
+                    "packageCode": {
+                      "bookingClassDetails": {
+                        "designator": "string"
+                      }
+                    },
+                    "roomInfoGroup": [
+                      {
+                        "numberOfRooms": {
+                          "quantityDetails": {
+                            "numberOfUnit": 0
+                          }
+                        },
+                        "roomDetailsInformation": {
+                          "roomTypeOverride": "string"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "bookingNumberInformation": {
+                  "reservation": {
+                    "controlNumber": "string"
+                  }
+                },
+                "ferryProviderInformation": {
+                  "companyCode": "string",
+                  "companyName": "string",
+                  "travelSector": "string"
+                },
+                "itineraryInfoGroup": {
+                  "animalInfoGroup": [
+                    {
+                      "animalInformation": {
+                        "dataInformation": {
+                          "indicator": "string",
+                          "value": 0
+                        },
+                        "dataTypeInformation": {
+                          "type": "string"
+                        }
+                      },
+                      "animalRoutePrice": {
+                        "priceDetails": {
+                          "currencyCode": "string",
+                          "priceAmount": 0,
+                          "priceQualifier": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "passengerAssociation": {
+                    "referenceDetails": [
+                      {
+                        "type": "string",
+                        "value": "string"
+                      }
+                    ]
+                  },
+                  "priceInfoGroup": [
+                    {
+                      "numberOfPassengers": {
+                        "quantityDetails": {
+                          "numberOfUnit": 0
+                        }
+                      },
+                      "passengerCategoryType": {
+                        "attributeDetails": {
+                          "attributeType": "string"
+                        },
+                        "attributeFunction": "string"
+                      },
+                      "routePriceInformation": {
+                        "priceDetails": {
+                          "currencyCode": "string",
+                          "priceAmount": 0,
+                          "priceQualifier": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "sailingDetails": {
+                    "boardPortDetails": [
+                      {
+                        "code": "string",
+                        "name": "string",
+                        "qualifier": "string"
+                      }
+                    ],
+                    "itineraryDateTimeInfo": {
+                      "arrivalDate": "string",
+                      "arrivalTime": "string",
+                      "departureDate": "string",
+                      "departureTime": "string"
+                    },
+                    "lineNumber": "string"
+                  },
+                  "sailingLegCheckInInformation": {
+                    "dateTime": {
+                      "hour": "string",
+                      "minutes": "string"
+                    }
+                  },
+                  "serviceInfoGroup": [
+                    {
+                      "numberOfServices": {
+                        "quantityDetails": {
+                          "numberOfUnit": 0
+                        }
+                      },
+                      "serviceInformation": {
+                        "attributeDetails": {
+                          "attributeType": "string"
+                        },
+                        "attributeFunction": "string"
+                      },
+                      "serviceRoutePrice": {
+                        "priceDetails": {
+                          "currencyCode": "string",
+                          "priceAmount": 0,
+                          "priceQualifier": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "shipDescription": {
+                    "shipDetails": {
+                      "name": "string"
+                    }
+                  },
+                  "vehicleInfoGroup": [
+                    {
+                      "numberOfBicycles": {
+                        "quantityDetails": {
+                          "numberOfUnit": 0
+                        }
+                      },
+                      "vehicleInformation": {
+                        "category": "string",
+                        "vehicleDetails": {
+                          "makeAndModel": "string"
+                        }
+                      },
+                      "vehicleRoutePrice": {
+                        "priceDetails": {
+                          "currencyCode": "string",
+                          "priceAmount": 0,
+                          "priceQualifier": "string"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "flightDetail": {
+                "arrivalStationInfo": {
+                  "terminal": "string"
+                },
+                "departureInformation": {
+                  "departTerminal": "string"
+                },
+                "facilities": [
+                  {
+                    "entertainement": "string",
+                    "entertainementDescription": "string",
+                    "productExtensionCode": [
+                      "string"
+                    ],
+                    "productQualifier": "string"
+                  }
+                ],
+                "mileageTimeDetails": {
+                  "flightLegMileage": 0,
+                  "unitQualifier": "string"
+                },
+                "productDetails": {
+                  "duration": "string",
+                  "equipment": "string",
+                  "numOfStops": 0,
+                  "weekDay": 0
+                },
+                "timeDetail": {
+                  "checkinTime": "string"
+                }
+              },
+              "flixInfo": [
+                {
+                  "airportGroup": {
+                    "impactedAirport": {
+                      "locationDetails": {
+                        "cityCode": "string"
+                      }
+                    }
+                  },
+                  "flixAndSourceTypes": {
+                    "itemCharacteristic": "string"
+                  },
+                  "flixComment": {
+                    "freeText": [
+                      "string"
+                    ],
+                    "freeTextDetails": {
+                      "encoding": "string",
+                      "language": "string",
+                      "source": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  }
+                }
+              ],
+              "generalOption": [
+                {
+                  "optionDetail": {
+                    "freetext": [
+                      "string"
+                    ],
+                    "type": "string",
+                    "updateIndicator": "string"
+                  }
+                }
+              ],
+              "hotelProduct": {
+                "hotelRoom": {
+                  "occupancy": 0,
+                  "typeCode": "string"
+                },
+                "negotiated": [
+                  {
+                    "rateCode": "string"
+                  }
+                ],
+                "otherHotelInfo": {
+                  "currencyCode": "string"
+                },
+                "property": {
+                  "code": "string",
+                  "name": "string",
+                  "providerName": "string"
+                }
+              },
+              "hotelReservationInfo": {
+                "arrivalFlightDetails": {
+                  "additionalTransportDetails": {
+                    "terminalInformation": [
+                      {
+                        "arrivalTerminal": "string"
+                      }
+                    ]
+                  },
+                  "travelProductInformation": {
+                    "boardpointDetail": {
+                      "cityCode": "string",
+                      "cityName": "string"
+                    },
+                    "companyDetail": {
+                      "identification": "string",
+                      "secondIdentification": "string",
+                      "sourceCode": "string"
+                    },
+                    "offpointDetail": {
+                      "cityCode": "string",
+                      "cityName": "string"
+                    },
+                    "processingIndicator": "string",
+                    "product": {
+                      "arrDate": "string",
+                      "arrTime": "string",
+                      "dayChangeIndicator": 0,
+                      "depDate": "string",
+                      "depTime": "string"
+                    },
+                    "productDetails": {
+                      "classOfService": "string",
+                      "description": "string",
+                      "identification": "string",
+                      "subtype": "string"
+                    },
+                    "typeDetail": {
+                      "detail": "string"
+                    }
+                  }
+                },
+                "billableInfo": {
+                  "billingInfo": [
+                    {
+                      "billingDetails": "string",
+                      "billingQualifier": "string"
+                    }
+                  ]
+                },
+                "bookingIndicator": {
+                  "statusInformation": [
+                    {
+                      "indicator": "string"
+                    }
+                  ]
+                },
+                "bookingSource": {
+                  "originIdentification": {
+                    "originatorId": "string"
+                  }
+                },
+                "cancelOrConfirmNbr": [
+                  {
+                    "reservation": {
+                      "companyId": "string",
+                      "controlNumber": "string",
+                      "controlType": "string",
+                      "date": "string",
+                      "time": "string"
+                    }
+                  }
+                ],
+                "companyIdentification": {
+                  "accessLevel": "string",
+                  "companyCode": "string",
+                  "companyCodeContext": "string",
+                  "companyName": "string",
+                  "travelSector": "string"
+                },
+                "customerInfo": {
+                  "customerReferences": [
+                    {
+                      "referenceNumber": "string",
+                      "referenceQualifier": "string"
+                    }
+                  ]
+                },
+                "documentInformationDetails": {
+                  "documentDetails": {
+                    "number": 0,
+                    "status": "string"
+                  }
+                },
+                "frequentTravellerInfo": {
+                  "airlineFrequentTraveler": {
+                    "company": "string",
+                    "membershipNumber": "string",
+                    "priorityCode": "string",
+                    "tierDescription": "string",
+                    "tierLevel": "string"
+                  },
+                  "allianceFrequentTraveler": {
+                    "companyCode": "string",
+                    "priorityCode": "string",
+                    "tierDescription": "string",
+                    "tierLevel": "string"
+                  }
+                },
+                "guaranteeOrDeposit": {
+                  "creditCardInfo": {
+                    "formOfPayment": [
+                      {
+                        "creditCardNumber": "string",
+                        "expiryDate": "string",
+                        "extendedPayment": "string",
+                        "fopFreeText": "string",
+                        "indicator": "string",
+                        "type": "string",
+                        "vendorCode": "string"
+                      }
+                    ]
+                  },
+                  "paymentInfo": {
+                    "paymentDetails": {
+                      "formOfPaymentCode": "string",
+                      "paymentType": "string",
+                      "referenceNumber": "string",
+                      "serviceToPay": "string"
+                    }
+                  }
+                },
+                "hotelPropertyInfo": {
+                  "fireSafetyIndicator": "string",
+                  "hotelName": "string",
+                  "hotelReference": {
+                    "chainCode": "string",
+                    "cityCode": "string",
+                    "hotelCode": "string"
+                  }
+                },
+                "requestedDates": {
+                  "beginDateTime": {
+                    "day": "string",
+                    "hour": "string",
+                    "minutes": "string",
+                    "month": "string",
+                    "year": "string"
+                  },
+                  "businessSemantic": "string",
+                  "endDateTime": {
+                    "day": "string",
+                    "hour": "string",
+                    "minutes": "string",
+                    "month": "string",
+                    "year": "string"
+                  },
+                  "timeMode": "string"
+                },
+                "roomRateDetails": {
+                  "children": [
+                    {
+                      "age": {
+                        "quantityDetails": {
+                          "qualifier": "string",
+                          "value": 0
+                        }
+                      },
+                      "referenceForPassenger": {
+                        "passengerReference": {
+                          "type": "string",
+                          "value": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "rateCodeIndicator": {
+                    "ruleDetails": {
+                      "quantity": 0,
+                      "quantityUnit": "string",
+                      "type": "string"
+                    },
+                    "ruleStatusDetails": {
+                      "processIndicator": "string",
+                      "statusType": "string"
+                    }
+                  },
+                  "roomInformation": {
+                    "bookingCode": "string",
+                    "guestCountDetails": {
+                      "numberOfUnit": 0,
+                      "unitQualifier": "string"
+                    },
+                    "roomRateIdentifier": {
+                      "rateCategoryCode": "string",
+                      "ratePlanCode": "string",
+                      "rateQualifiedIndic": "string",
+                      "roomType": "string"
+                    },
+                    "roomTypeOverride": "string"
+                  },
+                  "tariffDetails": {
+                    "chargeDetails": [
+                      {
+                        "amount": 0,
+                        "comment": "string",
+                        "currency": "string",
+                        "description": "string",
+                        "numberInParty": 0,
+                        "type": "string"
+                      }
+                    ],
+                    "rateInformation": {
+                      "category": "string"
+                    },
+                    "tariffInfo": {
+                      "amount": 0,
+                      "amountType": "string",
+                      "currency": "string",
+                      "rateChangeIndicator": "string",
+                      "ratePlanIndicator": "string",
+                      "rateType": "string"
+                    }
+                  }
+                },
+                "roomstayIndex": {
+                  "itemNumberDetails": {
+                    "number": "string"
+                  }
+                },
+                "savingAmountInfo": {
+                  "information": {
+                    "amount": 0,
+                    "currencyCode": "string",
+                    "qualifier": "string"
+                  }
+                },
+                "textOptions": [
+                  {
+                    "remarkDetails": {
+                      "businessFunction": "string",
+                      "encoding": "string",
+                      "freetext": "string",
+                      "language": "string",
+                      "source": "string",
+                      "type": "string"
+                    }
+                  }
+                ],
+                "writtenConfirmationContact": {
+                  "contactInformation": [
+                    {
+                      "comAddress": "string",
+                      "comChannelQualifier": "string",
+                      "partyQualifier": "string"
+                    }
+                  ]
+                },
+                "writtenConfirmationInfo": {
+                  "addressDetails": {
+                    "line1": "string",
+                    "line2": "string"
+                  },
+                  "partyNameDetails": {
+                    "name1": "string"
+                  },
+                  "partyQualifier": "string"
+                }
+              },
+              "insuranceDetails": {
+                "comissionAmount": {
+                  "commissionDetails": {
+                    "amount": 0,
+                    "currency": "string",
+                    "dealNumber": 0,
+                    "rate": 0,
+                    "type": "string"
+                  }
+                },
+                "confirmationNumber": {
+                  "reservation": {
+                    "controlNumber": "string"
+                  }
+                },
+                "contactDetails": {
+                  "contactName": {
+                    "otherPaxDetails": {
+                      "givenName": "string"
+                    },
+                    "paxDetails": {
+                      "surname": "string",
+                      "type": "string"
+                    }
+                  },
+                  "miscelaneous": {
+                    "remarkDetails": {
+                      "freetext": "string",
+                      "type": "string"
+                    }
+                  },
+                  "phoneNumber": {
+                    "emailAddress": "string",
+                    "phoneOrEmailType": "string",
+                    "telephoneNumber": {
+                      "areaCode": "string",
+                      "internationalDialCode": "string",
+                      "localPrefixCode": "string",
+                      "telephoneNumber": "string"
+                    }
+                  }
+                },
+                "coverageDetails": {
+                  "agentReferenceDetails": {
+                    "originator": "string"
+                  },
+                  "coverageDates": {
+                    "beginDateTime": {
+                      "day": "string",
+                      "month": "string",
+                      "year": "string"
+                    },
+                    "endDateTime": {
+                      "day": "string",
+                      "month": "string",
+                      "year": "string"
+                    }
+                  },
+                  "coverageInfo": [
+                    {
+                      "coverage": {
+                        "coverageIndicator": [
+                          "string"
+                        ]
+                      },
+                      "coverageValues": {
+                        "monetaryDetails": {
+                          "amount": "string",
+                          "currency": "string",
+                          "typeQualifier": "string"
+                        },
+                        "otherMonetaryDetails": {
+                          "amount": "string",
+                          "currency": "string",
+                          "typeQualifier": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "coveredPassenger": [
+                    {
+                      "otherPaxDetails": {
+                        "givenName": "string",
+                        "title": "string"
+                      },
+                      "paxDetails": {
+                        "surname": "string",
+                        "type": "string"
+                      }
+                    }
+                  ],
+                  "policyDetails": {
+                    "fareDiscount": "string"
+                  },
+                  "subscriptionDetails": {
+                    "dateTime": {
+                      "day": "string",
+                      "hour": "string",
+                      "minutes": "string",
+                      "month": "string",
+                      "seconds": 0,
+                      "year": "string"
+                    }
+                  }
+                },
+                "extraPremium": {
+                  "monetaryDetails": {
+                    "amount": "string",
+                    "currency": "string",
+                    "typeQualifier": "string"
+                  },
+                  "otherMonetaryDetails": {
+                    "amount": "string",
+                    "currency": "string",
+                    "typeQualifier": "string"
+                  }
+                },
+                "insuranceFopSection": {
+                  "fopExtendedData": [
+                    {
+                      "otherStatusDetails": [
+                        {
+                          "description": "string",
+                          "indicator": "string"
+                        }
+                      ],
+                      "statusDetails": {
+                        "description": "string",
+                        "indicator": "string"
+                      }
+                    }
+                  ],
+                  "formOfPaymentSection": {
+                    "formOfPayment": {
+                      "addressVerification": "string",
+                      "amount": 0,
+                      "approvalCode": "string",
+                      "authorisedAmount": 0,
+                      "creditCardNumber": "string",
+                      "customerAccount": "string",
+                      "expiryDate": "string",
+                      "extendedPayment": "string",
+                      "fopFreeText": "string",
+                      "indicator": "string",
+                      "membershipStatus": "string",
+                      "sourceOfApproval": "string",
+                      "transactionInfo": "string",
+                      "type": "string",
+                      "vendorCode": "string"
+                    },
+                    "otherFormOfPayment": [
+                      {
+                        "addressVerification": "string",
+                        "amount": 0,
+                        "approvalCode": "string",
+                        "authorisedAmount": 0,
+                        "creditCardNumber": "string",
+                        "customerAccount": "string",
+                        "expiryDate": "string",
+                        "extendedPayment": "string",
+                        "fopFreeText": "string",
+                        "indicator": "string",
+                        "membershipStatus": "string",
+                        "sourceOfApproval": "string",
+                        "transactionInfo": "string",
+                        "type": "string",
+                        "vendorCode": "string"
+                      }
+                    ]
+                  }
+                },
+                "passengerDetails": [
+                  {
+                    "dateOfBirthInfo": {
+                      "dateTime": {
+                        "day": "string",
+                        "month": "string",
+                        "year": "string"
+                      }
+                    },
+                    "insureeRemark": {
+                      "remarkDetails": {
+                        "freetext": "string",
+                        "type": "string"
+                      }
+                    },
+                    "passengerAssociation": {
+                      "referenceDetails": {
+                        "type": "string",
+                        "value": "string"
+                      }
+                    },
+                    "passengerFeatures": [
+                      {
+                        "otherPaxDetails": {
+                          "givenName": "string"
+                        },
+                        "paxDetails": {
+                          "gender": "string",
+                          "surname": "string",
+                          "type": "string"
+                        }
+                      }
+                    ],
+                    "perPaxProdKnowledge": [
+                      {
+                        "numberOfItemsDetails": {
+                          "actionQualifier": "string",
+                          "referenceQualifier": "string"
+                        }
+                      }
+                    ],
+                    "policyDetails": {
+                      "fareDiscount": "string"
+                    },
+                    "premiumPerTariffPerPax": [
+                      {
+                        "tariffCodeInfo": {
+                          "tariffCodeDetails": [
+                            {
+                              "tariffCode": "string",
+                              "tariffCodeType": "string"
+                            }
+                          ]
+                        },
+                        "tariffCodePerPaxAmount": {
+                          "monetaryDetails": {
+                            "amount": "string",
+                            "currency": "string",
+                            "typeQualifier": "string"
+                          },
+                          "otherMonetaryDetails": {
+                            "amount": "string",
+                            "currency": "string",
+                            "typeQualifier": "string"
+                          }
+                        }
+                      }
+                    ],
+                    "premiumPerpaxInfo": {
+                      "chargeDetails": [
+                        {
+                          "amount": 0,
+                          "currency": "string",
+                          "description": "string",
+                          "type": "string"
+                        }
+                      ],
+                      "tariffInfo": {
+                        "amount": 0,
+                        "amountType": "string",
+                        "currency": "string",
+                        "totalAmount": 0
+                      }
+                    },
+                    "travelerDocInfo": {
+                      "birthDate": "string",
+                      "documentDetails": {
+                        "countryOfIssue": "string",
+                        "expiryDate": "string",
+                        "issueDate": "string",
+                        "number": "string",
+                        "type": "string"
+                      }
+                    },
+                    "travelerValueDetails": {
+                      "travelAmount": {
+                        "monetaryDetails": {
+                          "amount": "string",
+                          "currency": "string",
+                          "typeQualifier": "string"
+                        },
+                        "otherMonetaryDetails": {
+                          "amount": "string",
+                          "currency": "string",
+                          "typeQualifier": "string"
+                        }
+                      },
+                      "travelCost": {
+                        "coverageIndicator": [
+                          "string"
+                        ]
+                      }
+                    },
+                    "voucherNumber": {
+                      "referenceDetails": {
+                        "value": "string"
+                      }
+                    }
+                  }
+                ],
+                "planCostInfo": {
+                  "chargeDetails": [
+                    {
+                      "amount": 0,
+                      "currency": "string",
+                      "description": "string",
+                      "type": "string"
+                    }
+                  ],
+                  "tariffInfo": {
+                    "amount": 0,
+                    "amountType": "string",
+                    "currency": "string",
+                    "totalAmount": 0
+                  }
+                },
+                "planTypeDetails": {
+                  "planType": {
+                    "countryInfo": {
+                      "countryCode": [
+                        "string"
+                      ],
+                      "geographicalZone": "string"
+                    },
+                    "tourOperator": "string",
+                    "tripType": "string"
+                  },
+                  "travelValue": {
+                    "monetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    },
+                    "otherMonetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    }
+                  }
+                },
+                "printInformation": {
+                  "documentDetails": {
+                    "date": "string",
+                    "number": "string",
+                    "status": "string"
+                  }
+                },
+                "productKnowledge": [
+                  {
+                    "numberOfItemsDetails": {
+                      "actionQualifier": "string",
+                      "referenceQualifier": "string"
+                    }
+                  }
+                ],
+                "productSection": [
+                  {
+                    "informationLines": {
+                      "freeText": [
+                        "string"
+                      ],
+                      "freeTextDetails": {
+                        "encoding": "string",
+                        "language": "string",
+                        "source": "string",
+                        "textSubjectQualifier": "string"
+                      }
+                    },
+                    "productCode": {
+                      "companyCode": "string",
+                      "countryCode": "string",
+                      "extensionIdentification": [
+                        {
+                          "code": "string",
+                          "name": "string",
+                          "productFamilyCode": "string"
+                        }
+                      ],
+                      "productDetails": {
+                        "code": "string",
+                        "name": "string",
+                        "productFamilyCode": "string"
+                      },
+                      "tariffCodeDetails": [
+                        {
+                          "tariffCode": "string",
+                          "tariffCodeType": "string"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "providerProductDetails": {
+                  "companyCode": "string",
+                  "countryCode": "string",
+                  "extraReference": [
+                    "string"
+                  ]
+                },
+                "subscriberAddressSection": {
+                  "addressInfo": {
+                    "addressDetails": {
+                      "format": "string",
+                      "line1": "string",
+                      "line2": "string",
+                      "line4": "string"
+                    },
+                    "city": "string",
+                    "locationDetails": {
+                      "name": "string",
+                      "qualifier": "string"
+                    },
+                    "regionDetails": {
+                      "name": "string",
+                      "qualifier": "string"
+                    },
+                    "zipCode": "string"
+                  },
+                  "nameDetails": {
+                    "nameInformation": {
+                      "identifier": "string",
+                      "name": "string",
+                      "qualifier": "string"
+                    }
+                  },
+                  "phoneNumber": {
+                    "emailAddress": "string",
+                    "phoneOrEmailType": "string",
+                    "telephoneNumber": {
+                      "areaCode": "string",
+                      "internationalDialCode": "string",
+                      "localPrefixCode": "string",
+                      "telephoneNumber": "string"
+                    }
+                  }
+                },
+                "substiteName": [
+                  {
+                    "otherPaxDetails": {
+                      "givenName": "string"
+                    },
+                    "paxDetails": {
+                      "surname": "string",
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "insuranceInformation": [
+                {
+                  "insuranceDocInfo": {
+                    "datesOfValidity": {
+                      "expirationDate": "string",
+                      "issueDate": "string"
+                    },
+                    "documentInformation": {
+                      "countryOfIssue": "string",
+                      "documentNumber": "string",
+                      "typeOfDocument": "string"
+                    }
+                  },
+                  "insuranceMonetaryInformation": {
+                    "information": {
+                      "amount": 0,
+                      "currencyCode": "string",
+                      "qualifier": "string"
+                    }
+                  },
+                  "insuranceName": {
+                    "insuranceTravelerDetails": {
+                      "passengerBirthdate": "string",
+                      "passengerType": "string",
+                      "travellerGivenName": "string",
+                      "travellerReferenceNumber": "string",
+                      "travellerSurname": "string"
+                    },
+                    "travelerPerpaxDetails": [
+                      {
+                        "perpaxMask": "string",
+                        "perpaxMaskIndicator": "string"
+                      }
+                    ]
+                  },
+                  "insurancePremiumInfo": {
+                    "amount": 0,
+                    "creditCardDetails": [
+                      {
+                        "creditCardCompany": "string",
+                        "creditCardNumber": "string",
+                        "expirationDate": "string"
+                      }
+                    ],
+                    "currency": "string",
+                    "fareType": "string",
+                    "futureAmount": 0,
+                    "futureCurrency": "string",
+                    "sexCode": "string",
+                    "supplementaryInformation": "string",
+                    "totalPremium": 0,
+                    "totalPremiumCurrency": "string",
+                    "travelerName": "string"
+                  }
+                }
+              ],
+              "itineraryFreetext": {
+                "freetextDetail": {
+                  "companyId": "string",
+                  "status": "string",
+                  "subjectQualifier": "string",
+                  "type": "string"
+                },
+                "longFreetext": "string"
+              },
+              "itineraryMessageAction": {
+                "business": {
+                  "function": "string"
+                }
+              },
+              "itineraryReservationInfo": {
+                "reservation": {
+                  "companyId": "string",
+                  "controlNumber": "string",
+                  "controlType": "string",
+                  "date": "string",
+                  "time": "string"
+                }
+              },
+              "itineraryfreeFormText": [
+                {
+                  "freeText": [
+                    "string"
+                  ],
+                  "freeTextQualification": {
+                    "companyId": "string",
+                    "informationType": "string",
+                    "language": "string",
+                    "status": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                }
+              ],
+              "lccTypicalData": {
+                "lccConnectionData": {
+                  "idsection": {
+                    "idqualifier": "string",
+                    "idsequenceNumber": 0
+                  }
+                },
+                "lccFareData": {
+                  "rateInformation": {
+                    "fareGroup": "string"
+                  },
+                  "tariffInfo": {
+                    "currencyCode": "string",
+                    "fareBaseAmount": 0,
+                    "fareBasisCode": "string"
+                  }
+                }
+              },
+              "legInfo": [
+                {
+                  "interactiveFreeText": [
+                    {
+                      "freeText": "string",
+                      "freeTextQualification": {
+                        "informationType": "string",
+                        "language": "string",
+                        "textSubjectQualifier": "string"
+                      }
+                    }
+                  ],
+                  "legTravelProduct": {
+                    "boardPointDetails": {
+                      "trueLocationId": "string"
+                    },
+                    "companyDetails": {
+                      "operatingCompany": "string"
+                    },
+                    "flightDate": {
+                      "arrivalDate": "string",
+                      "arrivalTime": "string",
+                      "departureDate": "string",
+                      "departureTime": "string"
+                    },
+                    "flightIdentification": {
+                      "flightNumber": "string"
+                    },
+                    "offpointDetails": {
+                      "trueLocationId": "string"
+                    }
+                  },
+                  "markerLegInfo": {}
+                }
+              ],
+              "markerRailTour": {},
+              "railInfo": {
+                "accommodationInfo": {
+                  "accommAllocation": {
+                    "code": "string",
+                    "referenceId": "string"
+                  }
+                },
+                "classInfo": {
+                  "classDetails": {
+                    "bookingClass": "string",
+                    "code": "string",
+                    "numberOfSeats": 0
+                  }
+                },
+                "coachInfo": {
+                  "coachDetails": {
+                    "value": "string"
+                  },
+                  "equipmentCode": "string"
+                },
+                "companyInfo": {
+                  "companyCode": "string",
+                  "companyNumericCode": 0
+                },
+                "journeyDirection": {
+                  "movementType": "string"
+                },
+                "openSegment": {
+                  "statusDetails": {
+                    "indicator": "string"
+                  }
+                },
+                "providerTattoo": {
+                  "referenceType": "string",
+                  "uniqueReference": "string"
+                },
+                "reservableStatus": {
+                  "accoStatus": {
+                    "statusCode": "string"
+                  }
+                },
+                "serviceInfo": {
+                  "freeText": [
+                    "string"
+                  ],
+                  "freeTextDetails": {
+                    "encoding": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                },
+                "tripDetails": {
+                  "arrLocation": {
+                    "firstLocationDetails": {
+                      "code": "string",
+                      "qualifier": "string"
+                    },
+                    "locationDescription": {
+                      "code": "string",
+                      "name": "string",
+                      "qualifier": "string"
+                    },
+                    "locationType": "string"
+                  },
+                  "depLocation": {
+                    "firstLocationDetails": {
+                      "code": "string",
+                      "qualifier": "string"
+                    },
+                    "locationDescription": {
+                      "code": "string",
+                      "name": "string",
+                      "qualifier": "string"
+                    },
+                    "locationType": "string"
+                  },
+                  "railLeg": [
+                    {
+                      "arrLocation": {
+                        "firstLocationDetails": {
+                          "code": "string",
+                          "qualifier": "string"
+                        },
+                        "locationDescription": {
+                          "code": "string",
+                          "name": "string",
+                          "qualifier": "string"
+                        },
+                        "locationType": "string"
+                      },
+                      "depLocation": {
+                        "firstLocationDetails": {
+                          "code": "string",
+                          "qualifier": "string"
+                        },
+                        "locationDescription": {
+                          "code": "string",
+                          "name": "string",
+                          "qualifier": "string"
+                        },
+                        "locationType": "string"
+                      },
+                      "legDateTime": [
+                        {
+                          "businessSemantic": "string",
+                          "dateTime": {
+                            "day": "string",
+                            "hour": "string",
+                            "minutes": "string",
+                            "month": "string",
+                            "year": "string"
+                          }
+                        }
+                      ],
+                      "legReference": {
+                        "itemNumberDetails": {
+                          "number": "string"
+                        }
+                      },
+                      "reservableStatus": {
+                        "accoStatus": {
+                          "statusCode": "string"
+                        }
+                      },
+                      "trainProductInfo": {
+                        "railCompany": "string",
+                        "trainDetails": {
+                          "code": "string",
+                          "number": "string"
+                        },
+                        "type": "string"
+                      }
+                    }
+                  ],
+                  "trainProductInfo": {
+                    "trainDetails": {
+                      "code": "string",
+                      "number": "string"
+                    },
+                    "type": "string"
+                  },
+                  "tripDateTime": [
+                    {
+                      "businessSemantic": "string",
+                      "dateTime": {
+                        "day": "string",
+                        "hour": "string",
+                        "minutes": "string",
+                        "month": "string",
+                        "year": "string"
+                      }
+                    }
+                  ]
+                },
+                "updatePermission": {
+                  "statusDetails": {
+                    "indicator": "string"
+                  }
+                }
+              },
+              "rateInformations": {
+                "rateIndicator": {
+                  "rateChangeIndicator": "string"
+                },
+                "rateInfo": {
+                  "ratePlan": "string"
+                },
+                "ratePrice": {
+                  "rateAmount": 0
+                }
+              },
+              "reasonForIssuanceCode": {
+                "otherSpecialCondition": "string",
+                "specialCondition": "string"
+              },
+              "referenceForSegment": {
+                "reference": [
+                  {
+                    "number": "string",
+                    "qualifier": "string"
+                  }
+                ]
+              },
+              "relatedProduct": {
+                "quantity": 0,
+                "status": [
+                  "string"
+                ]
+              },
+              "segmentAttribute": {
+                "attributeDetails": [
+                  {
+                    "attributeDescription": "string",
+                    "attributeType": "string"
+                  }
+                ]
+              },
+              "selectionDetails": {
+                "selection": [
+                  {
+                    "option": "string",
+                    "optionInformation": "string"
+                  }
+                ]
+              },
+              "taxInformation": [
+                {
+                  "taxDetails": [
+                    {
+                      "currCode": "string",
+                      "taxRate": "string",
+                      "taxType": [
+                        "string"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "tourInfo": {
+                "bookingDescriptionInfo": [
+                  {
+                    "freeText": [
+                      "string"
+                    ],
+                    "freeTextDetails": {
+                      "encoding": "string",
+                      "informationType": "string",
+                      "source": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  }
+                ],
+                "bookingDurationInfo": {
+                  "quantityDetails": {
+                    "qualifier": "string",
+                    "unit": "string",
+                    "value": 0
+                  }
+                },
+                "bookingReferenceInfo": [
+                  {
+                    "reservationControlId": {
+                      "reservationControlNumber": "string",
+                      "reservationControlNumberQual": "string",
+                      "tourOperatorCode": "string"
+                    }
+                  }
+                ],
+                "bookingSource": {
+                  "originIdentification": {
+                    "inHouseIdentification1": "string",
+                    "inHouseIdentification2": "string"
+                  },
+                  "originator": "string"
+                },
+                "bookingSummaryInfo": {
+                  "companyInformation": {
+                    "providerName": "string"
+                  },
+                  "dateTimeInformation": {
+                    "arrivalDate": "string",
+                    "arrivalTime": "string",
+                    "departureDate": "string",
+                    "departureTime": "string"
+                  },
+                  "locationInformation": [
+                    {
+                      "code": "string",
+                      "country": "string",
+                      "name": "string",
+                      "qualifier": "string"
+                    }
+                  ],
+                  "productDetails": {
+                    "code": "string",
+                    "description": "string",
+                    "subType": "string",
+                    "type": "string"
+                  }
+                },
+                "expireInfo": {
+                  "businessSemantic": "string",
+                  "dateTime": {
+                    "day": "string",
+                    "month": "string",
+                    "year": "string"
+                  }
+                },
+                "insuranceIndication": {
+                  "coverageIndicator": "string"
+                },
+                "passengerAssocation": [
+                  {
+                    "referenceDetails": {
+                      "type": "string",
+                      "value": "string"
+                    }
+                  }
+                ],
+                "passengerInfo": [
+                  {
+                    "otherPaxDetails": {
+                      "givenName": "string",
+                      "title": "string"
+                    },
+                    "paxDetails": {
+                      "surname": "string"
+                    }
+                  }
+                ],
+                "statusInfo": {
+                  "quantityActionDetails": [
+                    {
+                      "quantity": 0,
+                      "statusCode": "string"
+                    }
+                  ]
+                },
+                "stayingInfo": {
+                  "firstLocationDetails": {
+                    "code": "string",
+                    "qualifier": "string"
+                  },
+                  "locationDescription": {
+                    "code": "string",
+                    "name": "string",
+                    "qualifier": "string"
+                  },
+                  "locationType": "string"
+                },
+                "systemProviderInfo": {
+                  "companyIdentification": {
+                    "operatingCompany": "string"
+                  }
+                },
+                "tourAccountDetails": {
+                  "paymentInformation": [
+                    {
+                      "operatorCode": {
+                        "companyCode": "string",
+                        "companyName": "string",
+                        "travelSector": "string"
+                      },
+                      "payment": {
+                        "creditCardInformation": {
+                          "cardNumber": 0,
+                          "expireDate": "string",
+                          "name": "string"
+                        },
+                        "paymentDetails": {
+                          "amount": 0,
+                          "currencyCode": "string",
+                          "date": "string",
+                          "methodCode": "string",
+                          "purposeCode": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "remainingAmountsDetails": [
+                    {
+                      "providerCode": {
+                        "companyCode": "string",
+                        "companyName": "string",
+                        "travelSector": "string"
+                      },
+                      "remainingAmount": {
+                        "associatedChargesInformation": {
+                          "amount": 0,
+                          "chargeUnitCode": "string",
+                          "percentage": 0
+                        },
+                        "tariffInformation": [
+                          {
+                            "currencyCode": "string",
+                            "quantity": 0,
+                            "rateIdentifier": "string",
+                            "tariffQualifier": "string",
+                            "tariffStatus": "string",
+                            "totalAmount": 0,
+                            "unitaryAmount": 0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "tourDetailedPriceInfo": [
+                    {
+                      "markerSpecificRead": {},
+                      "productId": {
+                        "referenceDetails": {
+                          "type": "string",
+                          "value": "string"
+                        }
+                      },
+                      "productPrice": {
+                        "associatedChargesInformation": {
+                          "amount": 0,
+                          "chargeUnitCode": "string",
+                          "percentage": 0
+                        },
+                        "tariffInformation": [
+                          {
+                            "currencyCode": "string",
+                            "quantity": 0,
+                            "rateIdentifier": "string",
+                            "tariffQualifier": "string",
+                            "tariffStatus": "string",
+                            "totalAmount": 0,
+                            "unitaryAmount": 0
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "tourTotalPrices": [
+                    {
+                      "associatedChargesInformation": {
+                        "amount": 0,
+                        "chargeUnitCode": "string",
+                        "percentage": 0
+                      },
+                      "tariffInformation": [
+                        {
+                          "currencyCode": "string",
+                          "quantity": 0,
+                          "rateIdentifier": "string",
+                          "tariffQualifier": "string",
+                          "tariffStatus": "string",
+                          "totalAmount": 0,
+                          "unitaryAmount": 0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "tourDescriptionInfo": {
+                  "productArea": "string",
+                  "productDetails": {
+                    "addOnIndicator": 0,
+                    "productCategory": "string",
+                    "productCode": "string",
+                    "productDescription": "string"
+                  }
+                },
+                "tourOperatorInfo": [
+                  {
+                    "companyCode": "string",
+                    "companyName": "string",
+                    "travelSector": "string"
+                  }
+                ],
+                "tourProductDetails": [
+                  {
+                    "confirmationInfo": {
+                      "reservationControlId": {
+                        "reservationControlNumber": "string",
+                        "reservationControlNumberQual": "string",
+                        "tourOperatorCode": "string"
+                      }
+                    },
+                    "passengerAssociation": [
+                      {
+                        "referenceDetails": {
+                          "type": "string",
+                          "value": "string"
+                        }
+                      }
+                    ],
+                    "productInfo": {
+                      "productArea": "string",
+                      "productDetails": {
+                        "addOnIndicator": 0,
+                        "productCategory": "string",
+                        "productCode": "string",
+                        "productDescription": "string"
+                      }
+                    },
+                    "sequenceNumberInfo": {
+                      "itemIdentification": {
+                        "itemID": 0,
+                        "itemIDQualifier": "string"
+                      }
+                    },
+                    "serviceDetails": [
+                      {
+                        "accomodationDetails": [
+                          {
+                            "occupancynInfo": {
+                              "rangeDetails": {
+                                "dataType": "string",
+                                "maxOccupancy": 0,
+                                "minOccupancy": 0
+                              },
+                              "rangeQualifier": "string"
+                            },
+                            "passengerAssociation": [
+                              {
+                                "referenceDetails": {
+                                  "type": "string",
+                                  "value": "string"
+                                }
+                              }
+                            ],
+                            "roomInfo": {
+                              "bookingCode": "string",
+                              "guestCountDetails": {
+                                "numberOfUnit": 0,
+                                "unitQualifier": "string"
+                              },
+                              "roomRateIdentifier": {
+                                "roomType": "string"
+                              },
+                              "roomTypeOverride": "string"
+                            },
+                            "roomMealPlanInfo": {
+                              "diningIdentification": {
+                                "diningDescription": "string"
+                              }
+                            }
+                          }
+                        ],
+                        "productBCSDetails": {
+                          "agentIdentification": {
+                            "originIdentification": {
+                              "inHouseIdentification1": "string",
+                              "inHouseIdentification2": "string"
+                            },
+                            "originator": "string"
+                          },
+                          "distributionChannelData": {
+                            "cascadingSystem": {
+                              "companyId": "string"
+                            }
+                          }
+                        },
+                        "serviceDurationInfo": {
+                          "quantityDetails": {
+                            "qualifier": "string",
+                            "unit": "string",
+                            "value": 0
+                          }
+                        },
+                        "serviceInfo": {
+                          "companyInformation": {
+                            "providerName": "string"
+                          },
+                          "dateTimeInformation": {
+                            "arrivalDate": "string",
+                            "arrivalTime": "string",
+                            "departureDate": "string",
+                            "departureTime": "string"
+                          },
+                          "locationInformation": [
+                            {
+                              "code": "string",
+                              "country": "string",
+                              "name": "string",
+                              "qualifier": "string"
+                            }
+                          ],
+                          "productDetails": {
+                            "code": "string",
+                            "description": "string",
+                            "subType": "string",
+                            "type": "string"
+                          }
+                        },
+                        "transportationDetails": [
+                          {
+                            "arrivalInfo": {
+                              "firstLocationDetails": {
+                                "code": "string",
+                                "qualifier": "string"
+                              },
+                              "locationDescription": {
+                                "code": "string",
+                                "name": "string",
+                                "qualifier": "string"
+                              },
+                              "locationType": "string"
+                            },
+                            "departureInfo": {
+                              "firstLocationDetails": {
+                                "code": "string",
+                                "qualifier": "string"
+                              },
+                              "locationDescription": {
+                                "code": "string",
+                                "name": "string",
+                                "qualifier": "string"
+                              },
+                              "locationType": "string"
+                            },
+                            "equipmentInfo": {
+                              "sizeTypeDetails": {
+                                "description": "string"
+                              },
+                              "type": "string"
+                            },
+                            "transportationDuration": {
+                              "quantityDetails": {
+                                "qualifier": "string",
+                                "unit": "string",
+                                "value": 0
+                              }
+                            },
+                            "transportationInfo": {
+                              "companyDetails": {
+                                "marketingCompany": "string"
+                              },
+                              "flightDate": {
+                                "arrivalDate": "string",
+                                "arrivalTime": "string",
+                                "departureDate": "string",
+                                "departureTime": "string"
+                              },
+                              "flightIdentification": {
+                                "bookingClass": "string",
+                                "flightNumber": "string"
+                              },
+                              "flightTypeDetails": {
+                                "flightIndicator": "string"
+                              }
+                            },
+                            "transportationMealPlanInfo": {
+                              "diningIdentification": {
+                                "diningDescription": "string"
+                              }
+                            }
+                          }
+                        ],
+                        "vehiculeDetails": {
+                          "vehiculeInfo": {
+                            "vehiculeDescription": {
+                              "occupancy": 0
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "statusQuantityInfo": {
+                      "quantityActionDetails": [
+                        {
+                          "quantity": 0,
+                          "statusCode": "string"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "travelProduct": {
+                "boardpointDetail": {
+                  "cityCode": "string",
+                  "cityName": "string"
+                },
+                "companyDetail": {
+                  "identification": "string",
+                  "secondIdentification": "string",
+                  "sourceCode": "string"
+                },
+                "offpointDetail": {
+                  "cityCode": "string",
+                  "cityName": "string"
+                },
+                "processingIndicator": "string",
+                "product": {
+                  "arrDate": "string",
+                  "arrTime": "string",
+                  "dayChangeIndicator": 0,
+                  "depDate": "string",
+                  "depTime": "string"
+                },
+                "productDetails": {
+                  "classOfService": "string",
+                  "description": "string",
+                  "identification": "string",
+                  "subtype": "string"
+                },
+                "typeDetail": {
+                  "detail": "string"
+                }
+              },
+              "typicalCarData": {
+                "additionalInfo": {
+                  "freeText": [
+                    "string"
+                  ],
+                  "freeTextDetails": {
+                    "companyId": "string",
+                    "encoding": "string",
+                    "informationType": "string",
+                    "language": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                },
+                "agentInformation": {
+                  "nameInformation": {
+                    "name": "string",
+                    "qualifier": "string"
+                  }
+                },
+                "attribute": {
+                  "criteriaDetails": [
+                    {
+                      "attributeDescription": "string",
+                      "attributeType": "string"
+                    }
+                  ],
+                  "criteriaSetType": "string"
+                },
+                "billingData": {
+                  "billingInfo": [
+                    {
+                      "billingDetails": "string",
+                      "billingQualifier": "string"
+                    }
+                  ]
+                },
+                "bookingSource": {
+                  "originatorDetails": {
+                    "originatorId": "string"
+                  }
+                },
+                "cancelOrConfirmNbr": [
+                  {
+                    "reservation": {
+                      "companyId": "string",
+                      "controlNumber": "string",
+                      "controlType": "string",
+                      "date": "string",
+                      "time": "string"
+                    }
+                  }
+                ],
+                "companyIdentification": {
+                  "accessLevel": "string",
+                  "companyCode": "string",
+                  "companyCodeContext": "string",
+                  "companyName": "string",
+                  "travelSector": "string"
+                },
+                "customerEmail": {
+                  "contact": {
+                    "contactQualifier": "string",
+                    "email": "string"
+                  }
+                },
+                "customerInfo": {
+                  "customerReferences": [
+                    {
+                      "referenceNumber": "string",
+                      "referenceQualifier": "string"
+                    }
+                  ]
+                },
+                "deliveryAndCollection": [
+                  {
+                    "addressDeliveryCollection": {
+                      "addressDetails": {
+                        "format": "string",
+                        "line1": "string"
+                      },
+                      "addressUsageDetails": {
+                        "purpose": "string"
+                      },
+                      "city": "string",
+                      "countryCode": "string",
+                      "locationDetails": {
+                        "code": "string",
+                        "name": "string"
+                      },
+                      "regionDetails": {
+                        "code": "string"
+                      },
+                      "zipCode": "string"
+                    },
+                    "phoneNumber": {
+                      "phoneOrEmailType": "string",
+                      "telephoneNumberDetails": {
+                        "telephoneNumber": "string"
+                      }
+                    }
+                  }
+                ],
+                "electronicVoucherNumber": {
+                  "documentDetails": {
+                    "number": "string"
+                  }
+                },
+                "errorWarning": {
+                  "applicationError": {
+                    "errorDetails": {
+                      "errorCategory": "string",
+                      "errorCode": "string",
+                      "errorCodeOwner": "string"
+                    }
+                  },
+                  "errorFreeText": {
+                    "freeText": [
+                      "string"
+                    ],
+                    "freeTextDetails": {
+                      "companyId": "string",
+                      "encoding": "string",
+                      "informationType": "string",
+                      "language": "string",
+                      "source": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  }
+                },
+                "estimatedDistance": [
+                  {
+                    "quantityDetails": {
+                      "qualifier": "string",
+                      "unit": "string",
+                      "value": 0
+                    }
+                  }
+                ],
+                "fflyerNbr": {
+                  "airlineFrequentTraveler": {
+                    "company": "string",
+                    "membershipNumber": "string"
+                  }
+                },
+                "inclusiveTour": {
+                  "tourInformationDetails": {
+                    "tourCode": "string"
+                  }
+                },
+                "locationInfo": [
+                  {
+                    "firstLocationDetails": {
+                      "agency": "string",
+                      "code": "string",
+                      "qualifier": "string"
+                    },
+                    "locationDescription": {
+                      "code": "string",
+                      "name": "string"
+                    },
+                    "locationType": "string"
+                  }
+                ],
+                "marketingInfo": [
+                  {
+                    "freetextDetail": {
+                      "companyId": "string",
+                      "language": "string",
+                      "subjectQualifier": "string",
+                      "type": "string"
+                    },
+                    "text": [
+                      "string"
+                    ]
+                  }
+                ],
+                "payment": {
+                  "formOfPayment": [
+                    {
+                      "creditCardNumber": "string",
+                      "expiryDate": "string",
+                      "extendedPayment": "string",
+                      "fopFreeText": "string",
+                      "type": "string",
+                      "vendorCode": "string"
+                    }
+                  ]
+                },
+                "pickupDropoffTimes": {
+                  "beginDateTime": {
+                    "day": 0,
+                    "hour": 0,
+                    "minutes": 0,
+                    "month": 0,
+                    "year": "string"
+                  },
+                  "businessSemantic": "string",
+                  "endDateTime": {
+                    "day": 0,
+                    "hour": 0,
+                    "minutes": 0,
+                    "month": 0,
+                    "year": "string"
+                  },
+                  "timeMode": "string"
+                },
+                "rateCodeGroup": {
+                  "additionalInfo": {
+                    "freeText": [
+                      "string"
+                    ],
+                    "freeTextDetails": {
+                      "companyId": "string",
+                      "encoding": "string",
+                      "informationType": "string",
+                      "language": "string",
+                      "source": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  },
+                  "rateCodeInfo": {
+                    "fareCategories": {
+                      "fareType": "string"
+                    }
+                  }
+                },
+                "rateInfo": [
+                  {
+                    "chargeDetails": [
+                      {
+                        "amount": 0,
+                        "comment": "string",
+                        "currency": "string",
+                        "description": "string",
+                        "numberInParty": 0,
+                        "periodType": "string",
+                        "type": "string"
+                      }
+                    ],
+                    "rateInformation": {
+                      "category": "string"
+                    },
+                    "tariffInfo": {
+                      "amount": 0,
+                      "amountType": "string",
+                      "currency": "string",
+                      "rateChangeIndicator": "string",
+                      "ratePlanIndicator": "string",
+                      "rateType": "string"
+                    }
+                  }
+                ],
+                "rulesPoliciesGroup": {
+                  "dummy1": {},
+                  "otherRulesGroup": [
+                    {
+                      "dateTimeInfo": [
+                        {
+                          "beginDateTime": {
+                            "day": 0,
+                            "hour": 0,
+                            "minutes": 0,
+                            "month": 0,
+                            "year": "string"
+                          },
+                          "businessSemantic": "string",
+                          "endDateTime": {
+                            "day": 0,
+                            "hour": 0,
+                            "minutes": 0,
+                            "month": 0,
+                            "year": "string"
+                          },
+                          "timeMode": "string"
+                        }
+                      ],
+                      "otherRules": {
+                        "ruleDetails": [
+                          {
+                            "amount": 0,
+                            "currency": "string",
+                            "daysOfOperation": "string",
+                            "qualifier": "string",
+                            "quantity": 0,
+                            "quantityUnit": "string",
+                            "type": "string"
+                          }
+                        ],
+                        "ruleText": {
+                          "freeText": [
+                            "string"
+                          ],
+                          "textType": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "pickupDropoffLocation": [
+                    {
+                      "address": {
+                        "addressDetails": {
+                          "format": "string",
+                          "line1": "string",
+                          "line2": "string"
+                        },
+                        "city": "string",
+                        "countryCode": "string",
+                        "regionDetails": {
+                          "code": "string"
+                        },
+                        "zipCode": "string"
+                      },
+                      "locationInfo": {
+                        "locationDescription": {
+                          "code": "string",
+                          "name": "string"
+                        },
+                        "locationType": "string"
+                      },
+                      "openingHours": [
+                        {
+                          "beginDateTime": {
+                            "hour": 0,
+                            "minutes": 0
+                          },
+                          "businessSemantic": "string",
+                          "endDateTime": {
+                            "hour": 0,
+                            "minutes": 0
+                          },
+                          "frequency": {
+                            "qualifier": "string",
+                            "value": "string"
+                          },
+                          "timeMode": "string"
+                        }
+                      ],
+                      "phone": [
+                        {
+                          "emailAddress": "string",
+                          "phoneOrEmailType": "string"
+                        }
+                      ]
+                    }
+                  ],
+                  "remarks": {
+                    "freeText": [
+                      "string"
+                    ],
+                    "freeTextDetails": {
+                      "companyId": "string",
+                      "encoding": "string",
+                      "informationType": "string",
+                      "language": "string",
+                      "source": "string",
+                      "textSubjectQualifier": "string"
+                    }
+                  },
+                  "sourceLevel": {
+                    "selectionDetails": {
+                      "option": "string"
+                    }
+                  },
+                  "specialEquipmentDetails": [
+                    {
+                      "additionalInfo": {
+                        "freeText": [
+                          "string"
+                        ],
+                        "freeTextDetails": {
+                          "companyId": "string",
+                          "encoding": "string",
+                          "informationType": "string",
+                          "language": "string",
+                          "source": "string",
+                          "textSubjectQualifier": "string"
+                        }
+                      },
+                      "dummy2": {},
+                      "rangePeriod": [
+                        {
+                          "agePeriod": {
+                            "rangeDetails": {
+                              "dataType": "string",
+                              "max": 0,
+                              "min": 0
+                            },
+                            "rangeQualifier": "string"
+                          },
+                          "maximumUnitQualifier": {
+                            "measurementQualifier": "string",
+                            "valueRange": {
+                              "measureUnitQualifier": "string"
+                            }
+                          }
+                        }
+                      ],
+                      "specialEquipmentTariff": [
+                        {
+                          "chargeDetails": [
+                            {
+                              "amount": 0,
+                              "comment": "string",
+                              "currency": "string",
+                              "description": "string",
+                              "numberInParty": 0,
+                              "periodType": "string",
+                              "type": "string"
+                            }
+                          ],
+                          "tariffInfo": {
+                            "rateChangeIndicator": "string"
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "taxCovSurchargeGroup": [
+                    {
+                      "additionalInfo": {
+                        "freeText": [
+                          "string"
+                        ],
+                        "freeTextDetails": {
+                          "companyId": "string",
+                          "encoding": "string",
+                          "informationType": "string",
+                          "language": "string",
+                          "source": "string",
+                          "textSubjectQualifier": "string"
+                        }
+                      },
+                      "surchargePeriods": [
+                        {
+                          "maximumUnitQualifier": {
+                            "measurementQualifier": "string",
+                            "valueRange": {
+                              "measureUnitQualifier": "string"
+                            }
+                          },
+                          "period": {
+                            "rangeDetails": {
+                              "dataType": "string",
+                              "max": 0,
+                              "min": 0
+                            },
+                            "rangeQualifier": "string"
+                          },
+                          "surchargePeriodTariff": {
+                            "chargeDetails": [
+                              {
+                                "amount": 0,
+                                "comment": "string",
+                                "currency": "string",
+                                "description": "string",
+                                "numberInParty": 0,
+                                "periodType": "string",
+                                "type": "string"
+                              }
+                            ],
+                            "tariffInfo": {
+                              "rateChangeIndicator": "string"
+                            }
+                          }
+                        }
+                      ],
+                      "taxSurchargeCoverageInfo": {
+                        "chargeDetails": [
+                          {
+                            "amount": 0,
+                            "comment": "string",
+                            "currency": "string",
+                            "description": "string",
+                            "numberInParty": 0,
+                            "periodType": "string",
+                            "type": "string"
+                          }
+                        ],
+                        "tariffInfo": {
+                          "rateChangeIndicator": "string"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "supleInfo": [
+                  {
+                    "remarkDetails": {
+                      "businessFunction": "string",
+                      "encoding": "string",
+                      "freetext": "string",
+                      "language": "string",
+                      "source": "string",
+                      "type": "string"
+                    }
+                  }
+                ],
+                "trackingOpt": {
+                  "agreementDetails": {
+                    "code": "string",
+                    "description": "string"
+                  }
+                },
+                "vehicleInformation": {
+                  "carModel": "string",
+                  "freeTextDetails": {
+                    "companyId": "string",
+                    "encoding": "string",
+                    "informationType": "string",
+                    "language": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  },
+                  "vehSpecialEquipment": [
+                    "string"
+                  ],
+                  "vehicleCharacteristic": {
+                    "vehicleRentalPrefType": [
+                      "string"
+                    ],
+                    "vehicleTypeOwner": "string"
+                  },
+                  "vehicleInfo": [
+                    {
+                      "qualifier": "string",
+                      "unit": "string",
+                      "value": 0
+                    }
+                  ]
+                },
+                "voucherPrintAck": {
+                  "referenceDetails": {
+                    "type": "string",
+                    "value": "string"
+                  }
+                }
+              },
+              "typicalCruiseData": {
+                "bookingDate": {
+                  "dateTime": {
+                    "day": "string",
+                    "month": "string",
+                    "year": "string"
+                  }
+                },
+                "bookingDetails": {
+                  "bookingCompany": {
+                    "companyCode": "string",
+                    "companyCodeContext": "string",
+                    "companyName": "string",
+                    "travelSector": "string"
+                  },
+                  "cruiseBookingReferenceInfo": {
+                    "reservation": [
+                      {
+                        "controlNumber": "string",
+                        "controlType": "string"
+                      }
+                    ]
+                  }
+                },
+                "passengerInfo": [
+                  {
+                    "otherPaxDetails": {
+                      "givenName": "string",
+                      "title": "string"
+                    },
+                    "paxDetails": {
+                      "surname": "string"
+                    }
+                  }
+                ],
+                "sailingDateInformation": {
+                  "beginDateTime": {
+                    "day": "string",
+                    "month": "string",
+                    "year": 0
+                  },
+                  "endDateTime": {
+                    "day": "string",
+                    "month": "string",
+                    "year": 0
+                  }
+                },
+                "sailingGroupInformation": {
+                  "referenceType": "string",
+                  "uniqueReference": "string"
+                },
+                "sailingPortsInformation": {
+                  "firstLocationDetails": {
+                    "code": "string"
+                  },
+                  "secondLocationDetails": {
+                    "code": "string"
+                  }
+                },
+                "sailingProviderInformation": {
+                  "companyCode": "string",
+                  "companyCodeContext": "string",
+                  "companyName": "string",
+                  "travelSector": "string"
+                },
+                "sailingShipInformation": {
+                  "shipDetails": {
+                    "code": "string",
+                    "cruiseLineCode": "string",
+                    "name": "string"
+                  }
+                }
+              },
+              "yieldGroup": {
+                "yieldData": {
+                  "oversale": {
+                    "oversaleIndicator": [
+                      "string"
+                    ],
+                    "oversaleNumber": 0
+                  },
+                  "scheduleChange": "string"
+                },
+                "yieldDataGroup": {
+                  "classCombinaison": {
+                    "bookingClassDetails": [
+                      {
+                        "availabilityStatus": "string",
+                        "designator": "string"
+                      }
+                    ]
+                  },
+                  "ondyield": {
+                    "destination": "string",
+                    "origin": "string"
+                  },
+                  "pointOfCommencement": {
+                    "location": "string"
+                  },
+                  "tripOnD": {
+                    "destination": "string",
+                    "origin": "string"
+                  },
+                  "yieldInformations": {
+                    "monetaryDetails": {
+                      "amount": 0,
+                      "typeQualifier": "string"
+                    },
+                    "otherMonetaryDetails": [
+                      {
+                        "amount": 0,
+                        "typeQualifier": "string"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "originDestination": {
+            "destination": "string",
+            "origin": "string"
+          }
+        }
+      ],
+      "pnrHeader": [
+        {
+          "referenceForRecordLocator": {
+            "reference": [
+              {
+                "number": "string",
+                "qualifier": "string"
+              }
+            ]
+          },
+          "reservationInfo": {
+            "reservation": [
+              {
+                "companyId": "string",
+                "controlNumber": "string",
+                "controlType": "string",
+                "date": "string",
+                "time": 0
+              }
+            ]
+          }
+        }
+      ],
+      "pnrHeaderTag": {
+        "statusInformation": [
+          {
+            "description": "string",
+            "indicator": "string"
+          }
+        ]
+      },
+      "pnrType": {
+        "attributeDetails": [
+          {
+            "attributeType": "string"
+          }
+        ]
+      },
+      "pricingRecordGroup": {
+        "pricingRecordData": {
+          "idNumber": "string"
+        },
+        "productPricingQuotationRecord": [
+          {
+            "documentDetailsGroup": {
+              "airlineServiceFeeGroup": [
+                {
+                  "carrierFee": {
+                    "dataInformation": [
+                      {
+                        "indicator": "string"
+                      }
+                    ],
+                    "dataTypeInformation": {
+                      "type": "string"
+                    }
+                  },
+                  "feeAmount": {
+                    "monetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    }
+                  },
+                  "feeDescription": {
+                    "attributeDetails": [
+                      {
+                        "attributeDescription": "string",
+                        "attributeType": "string"
+                      }
+                    ]
+                  },
+                  "feeTax": [
+                    {
+                      "taxCategory": "string",
+                      "taxDetails": {
+                        "countryCode": "string",
+                        "currencyCode": "string",
+                        "rate": "string",
+                        "type": "string"
+                      }
+                    }
+                  ],
+                  "vatPropertiesGroup": {
+                    "fareFiling": {
+                      "selectionDetails": {
+                        "option": "string"
+                      }
+                    },
+                    "vatRateAndAmount": {
+                      "monetaryDetails": {
+                        "amount": "string",
+                        "typeQualifier": "string"
+                      },
+                      "otherMonetaryDetails": {
+                        "amount": "string",
+                        "typeQualifier": "string"
+                      }
+                    }
+                  }
+                }
+              ],
+              "atcFares": {
+                "atcTotalAdditionalCollection": {
+                  "monetaryDetails": {
+                    "amount": "string",
+                    "currency": "string",
+                    "typeQualifier": "string"
+                  }
+                },
+                "otherAtcFares": [
+                  {
+                    "monetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    }
+                  }
+                ]
+              },
+              "couponDetailsGroup": [
+                {
+                  "baggageInformation": {
+                    "baggageDetails": {
+                      "freeAllowance": 0,
+                      "quantityCode": "string",
+                      "unitQualifier": "string"
+                    },
+                    "excessBaggageDetails": {
+                      "amount": 0,
+                      "currency": "string"
+                    }
+                  },
+                  "couponFlags": [
+                    {
+                      "statusDetails": {
+                        "action": "string",
+                        "indicator": "string"
+                      }
+                    }
+                  ],
+                  "couponTaxDetailsGroup": [
+                    {
+                      "locationInfo": {
+                        "locationDescription": {
+                          "code": "string"
+                        },
+                        "locationType": "string"
+                      },
+                      "monetaryInfo": {
+                        "monetaryDetails": {
+                          "amount": 0,
+                          "currency": "string",
+                          "location": "string",
+                          "typeQualifier": "string"
+                        },
+                        "otherMonetaryDetails": [
+                          {
+                            "amount": 0,
+                            "currency": "string",
+                            "location": "string",
+                            "typeQualifier": "string"
+                          }
+                        ]
+                      },
+                      "taxDetails": {
+                        "taxCategory": "string",
+                        "taxDetails": {
+                          "countryCode": "string",
+                          "type": [
+                            "string"
+                          ]
+                        }
+                      },
+                      "taxTriggerInfo": {
+                        "taxQualifier": "string"
+                      }
+                    }
+                  ],
+                  "couponValue": {
+                    "monetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    }
+                  },
+                  "fareQualifier": {
+                    "fareBasisDetails": {
+                      "otherRateTariffClass": "string",
+                      "otherRateTariffIndicator": "string",
+                      "rateTariffClass": "string",
+                      "rateTariffIndicator": "string"
+                    }
+                  },
+                  "feeOwner": {
+                    "companyCode": "string"
+                  },
+                  "flightConnectionType": {
+                    "flightTypeDetails": {
+                      "flightIndicator": "string"
+                    }
+                  },
+                  "icw": [
+                    {
+                      "carrier": {
+                        "companyIdentification": {
+                          "marketingCompany": "string"
+                        }
+                      },
+                      "couponList": [
+                        {
+                          "couponDetails": {
+                            "cpnNumber": "string"
+                          }
+                        }
+                      ],
+                      "identification": {
+                        "documentDetails": {
+                          "number": "string",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "presentToAtAndRemarks": [
+                    {
+                      "freeText": [
+                        "string"
+                      ],
+                      "freeTextDetails": {
+                        "encoding": "string",
+                        "source": "string",
+                        "textSubjectQualifier": "string"
+                      }
+                    }
+                  ],
+                  "productId": {
+                    "referenceDetails": {
+                      "type": "string",
+                      "value": "string"
+                    }
+                  },
+                  "rfisc": {
+                    "criteriaDetails": {
+                      "attributeDescription": "string",
+                      "attributeType": "string"
+                    },
+                    "criteriaSetType": "string"
+                  },
+                  "validityDates": [
+                    {
+                      "dateAndTimeDetails": {
+                        "date": "string",
+                        "qualifier": "string",
+                        "time": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "creationDate": {
+                "businessSemantic": "string",
+                "dateTime": {
+                  "day": "string",
+                  "hour": "string",
+                  "milliseconds": 0,
+                  "minutes": "string",
+                  "month": "string",
+                  "seconds": 0,
+                  "year": "string"
+                }
+              },
+              "fareCalcRemarks": [
+                {
+                  "freeText": [
+                    "string"
+                  ],
+                  "freeTextDetails": {
+                    "encoding": "string",
+                    "source": "string",
+                    "textSubjectQualifier": "string"
+                  }
+                }
+              ],
+              "fareComponentDetailsGroup": [
+                {
+                  "componentClassInfo": {
+                    "fareBasisDetails": {
+                      "otherRateTariffClass": "string",
+                      "rateTariffClass": "string"
+                    }
+                  },
+                  "couponDetailsGroup": [
+                    {
+                      "productId": {
+                        "referenceDetails": {
+                          "type": "string",
+                          "value": "string"
+                        }
+                      }
+                    }
+                  ],
+                  "fareComponentID": {
+                    "itemNumberDetails": [
+                      {
+                        "number": "string",
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "fareFamilyDetails": {
+                    "commercialFamilyDetails": [
+                      {
+                        "commercialFamily": "string"
+                      }
+                    ],
+                    "fareFamilyname": "string",
+                    "hierarchy": 0
+                  },
+                  "fareFamilyOwner": {
+                    "companyIdentification": {
+                      "otherCompany": "string"
+                    }
+                  },
+                  "fareQualifiersDetail": {
+                    "discountDetails": [
+                      {
+                        "fareQualifier": "string"
+                      }
+                    ]
+                  },
+                  "marketFareComponent": {
+                    "boardPointDetails": {
+                      "trueLocationId": "string"
+                    },
+                    "offpointDetails": {
+                      "trueLocationId": "string"
+                    }
+                  },
+                  "monetaryInformation": {
+                    "monetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    },
+                    "otherMonetaryDetails": [
+                      {
+                        "amount": "string",
+                        "currency": "string",
+                        "typeQualifier": "string"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "flags": [
+                {
+                  "statusDetails": {
+                    "action": "string",
+                    "indicator": "string"
+                  }
+                }
+              ],
+              "generalIndicators": [
+                {
+                  "attributeDetails": {
+                    "attributeDescription": "string",
+                    "attributeType": "string"
+                  }
+                }
+              ],
+              "issueIdentifier": {
+                "priceTariffType": "string",
+                "priceTicketDetails": {
+                  "indicators": "string"
+                }
+              },
+              "manualIndicator": {
+                "statusDetails": {
+                  "action": "string",
+                  "indicator": "string"
+                }
+              },
+              "negoDetails": {
+                "commissionInformation": {
+                  "commissionDetails": {
+                    "amount": 0,
+                    "currency": "string",
+                    "type": "string"
+                  },
+                  "otherComDetails": {
+                    "amount": 0,
+                    "currency": "string",
+                    "type": "string"
+                  }
+                },
+                "negoOtherFares": [
+                  {
+                    "monetaryDetails": {
+                      "amount": "string",
+                      "currency": "string",
+                      "typeQualifier": "string"
+                    }
+                  }
+                ],
+                "negoReferences": [
+                  {
+                    "referenceDetails": {
+                      "type": "string",
+                      "value": "string"
+                    }
+                  }
+                ],
+                "negoSellingFare": {
+                  "monetaryDetails": {
+                    "amount": "string",
+                    "currency": "string",
+                    "typeQualifier": "string"
+                  }
+                },
+                "schemeIndicator": {
+                  "priceTicketDetails": {
+                    "indicators": "string"
+                  }
+                },
+                "tourInformation": {
+                  "tourInformationDetails": {
+                    "tourCode": "string"
+                  }
+                }
+              },
+              "officeInformation": {
+                "originIdentification": {
+                  "inHouseIdentification1": "string",
+                  "inHouseIdentification2": "string",
+                  "originatorId": 0
+                }
+              },
+              "originDestination": {
+                "destination": "string",
+                "origin": "string"
+              },
+              "otherDates": [
+                {
+                  "businessSemantic": "string",
+                  "dateTime": {
+                    "day": "string",
+                    "hour": "string",
+                    "milliseconds": 0,
+                    "minutes": "string",
+                    "month": "string",
+                    "seconds": 0,
+                    "year": "string"
+                  }
+                }
+              ],
+              "otherFares": [
+                {
+                  "monetaryDetails": {
+                    "amount": "string",
+                    "currency": "string",
+                    "typeQualifier": "string"
+                  }
+                }
+              ],
+              "rfics": [
+                {
+                  "criteriaDetails": {
+                    "attributeDescription": "string",
+                    "attributeType": "string"
+                  },
+                  "criteriaSetType": "string"
+                }
+              ],
+              "taxInformation": [
+                {
+                  "taxCategory": "string",
+                  "taxDetails": {
+                    "countryCode": "string",
+                    "currencyCode": "string",
+                    "rate": "string",
+                    "type": "string"
+                  }
+                }
+              ],
+              "totalFare": {
+                "monetaryDetails": {
+                  "amount": "string",
+                  "currency": "string",
+                  "typeQualifier": "string"
+                }
+              }
+            },
+            "fareIds": [
+              {
+                "referenceDetails": {
+                  "type": "string",
+                  "value": "string"
+                }
+              }
+            ],
+            "passengerTattoos": [
+              {
+                "passengerReference": {
+                  "type": "string",
+                  "value": "string"
+                }
+              }
+            ],
+            "pricingRecordId": {
+              "actionCategory": "string",
+              "idSection": [
+                {
+                  "creationDay": "string",
+                  "creationHour": "string",
+                  "creationMinutes": "string",
+                  "creationMonth": "string",
+                  "creationYear": "string",
+                  "description": "string",
+                  "primeId": "string",
+                  "referenceQualifier": "string",
+                  "secondaryId": "string",
+                  "status": "string",
+                  "systemQualifier": "string",
+                  "versionNumber": "string"
+                }
+              ],
+              "referenceType": "string",
+              "uniqueReference": "string"
+            },
+            "ptcDiscountCode": [
+              {
+                "discountDetails": {
+                  "beneficiary": "string",
+                  "discountCode": "string",
+                  "percentage": 0,
+                  "unitQuantity": 0
+                },
+                "otherDiscountDetails": [
+                  {
+                    "beneficiary": "string",
+                    "discountCode": "string",
+                    "percentage": 0,
+                    "unitQuantity": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "queueInformations": {
+        "categoryDetail": {
+          "categoryName": "string",
+          "categoryNum1": 0
+        },
+        "dateRange": {
+          "dateRangeNum": 0
+        },
+        "informations": {
+          "indicator": "string",
+          "queueType": "string"
+        },
+        "queueDetail": {
+          "queueName": "string",
+          "queueNum1": 0
+        }
+      },
+      "sbrCreationPosDetails": {
+        "sbrPreferences": {
+          "userPreferences": {
+            "codedCountry": "string",
+            "codedCurrency": "string",
+            "codedLanguage": "string"
+          }
+        },
+        "sbrSystemDetails": {
+          "deliveringSystem": {
+            "companyId": "string",
+            "locationId": "string"
+          }
+        },
+        "sbrUserIdentificationOwn": {
+          "originIdentification": {
+            "inHouseIdentification1": "string",
+            "inHouseIdentification2": 0,
+            "originatorId": 0
+          },
+          "originatorTypeCode": "string"
+        }
+      },
+      "sbrPOSDetails": {
+        "sbrPreferences": {
+          "userPreferences": {
+            "codedCountry": "string",
+            "codedCurrency": "string",
+            "codedLanguage": "string"
+          }
+        },
+        "sbrSystemDetails": {
+          "deliveringSystem": {
+            "companyId": "string",
+            "locationId": "string"
+          }
+        },
+        "sbrUserIdentificationOwn": {
+          "originIdentification": {
+            "inHouseIdentification1": "string",
+            "inHouseIdentification2": 0,
+            "originatorId": 0
+          },
+          "originatorTypeCode": "string"
+        }
+      },
+      "sbrUpdatorPosDetails": {
+        "sbrPreferences": {
+          "userPreferences": {
+            "codedCountry": "string",
+            "codedCurrency": "string",
+            "codedLanguage": "string"
+          }
+        },
+        "sbrSystemDetails": {
+          "deliveringSystem": {
+            "companyId": "string",
+            "locationId": "string"
+          }
+        },
+        "sbrUserIdentificationOwn": {
+          "originIdentification": {
+            "inHouseIdentification1": "string",
+            "inHouseIdentification2": 0,
+            "originatorId": 0
+          },
+          "originatorTypeCode": "string"
+        }
+      },
+      "securityInformation": {
+        "cityCode": "string",
+        "queueingInformation": {
+          "location": "string",
+          "queueingOfficeId": "string"
+        },
+        "responsibilityInformation": {
+          "agentId": "string",
+          "iataCode": "string",
+          "officeId": "string",
+          "typeOfPnrElement": "string"
+        },
+        "secondRpInformation": {
+          "agentSignature": "string",
+          "creationDate": "string",
+          "creationOfficeId": "string",
+          "creationTime": "string",
+          "creatorIataCode": "string"
+        }
+      },
+      "segmentGroupingInfo": [
+        {
+          "groupingCode": "string",
+          "marriageDetail": [
+            {
+              "marriageQualifier": "string",
+              "tatooNum": "string"
+            }
+          ]
+        }
+      ],
+      "technicalData": {
+        "enveloppeNumberData": {
+          "actionRequest": "string",
+          "sequenceDetails": {
+            "number": "string"
+          }
+        },
+        "generalPNRInformation": {
+          "statusDetails": {
+            "indicator": "string",
+            "isPNRModifDuringTrans": "string"
+          }
+        },
+        "lastTransmittedEnvelopeNumber": {
+          "currentRecord": 0
+        },
+        "purgeDateData": {
+          "dateTime": {
+            "day": "string",
+            "month": "string",
+            "year": 0
+          }
+        }
+      },
+      "travellerInfo": [
+        {
+          "elementManagementPassenger": {
+            "lineNumber": 0,
+            "reference": {
+              "number": 0,
+              "qualifier": "string"
+            },
+            "segmentName": "string",
+            "status": "string"
+          },
+          "enhancedPassengerData": [
+            {
+              "dateOfBirthInEnhancedPaxData": {
+                "dateAndTimeDetails": {
+                  "date": "string",
+                  "qualifier": "string"
+                }
+              },
+              "enhancedTravellerInformation": {
+                "otherPaxNamesDetails": [
+                  {
+                    "displayedName": "string",
+                    "givenName": "string",
+                    "nameType": "string",
+                    "referenceName": "string",
+                    "romanizationMethod": "string",
+                    "surname": "string",
+                    "title": "string"
+                  }
+                ],
+                "travellerNameInfo": {
+                  "age": 0,
+                  "infantIndicator": "string",
+                  "otherType": "string",
+                  "qualifier": "string",
+                  "quantity": 0,
+                  "travellerIdentificationCode": "string",
+                  "type": "string"
+                }
+              },
+              "groupCountersInEnhancedPaxData": {
+                "quantityDetails": [
+                  {
+                    "numberOfUnit": 0,
+                    "unitQualifier": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "nameError": {
+            "errorOrWarningCodeDetails": {
+              "errorDetails": {
+                "errorCategory": "string",
+                "errorCode": "string",
+                "errorCodeOwner": "string"
+              }
+            },
+            "errorWarningDescription": {
+              "freeText": [
+                "string"
+              ],
+              "freeTextDetails": {
+                "encoding": "string",
+                "informationType": "string",
+                "language": "string",
+                "source": "string",
+                "textSubjectQualifier": "string"
+              }
+            }
+          },
+          "passengerData": [
+            {
+              "dateOfBirth": {
+                "dateAndTimeDetails": {
+                  "date": "string",
+                  "qualifier": "string"
+                }
+              },
+              "groupCounters": {
+                "quantityDetails": [
+                  {
+                    "numberOfUnit": 0,
+                    "unitQualifier": "string"
+                  }
+                ]
+              },
+              "travellerInformation": {
+                "passenger": [
+                  {
+                    "firstName": "string",
+                    "identificationCode": "string",
+                    "infantIndicator": "string",
+                    "type": "string"
+                  }
+                ],
+                "traveller": {
+                  "qualifier": "string",
+                  "quantity": 0,
+                  "staffType": "string",
+                  "surname": "string"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "tstData": [
+        {
+          "fareBasisInfo": {
+            "fareElement": [
+              {
+                "baggageAllowance": "string",
+                "connection": "string",
+                "fareBasis": "string",
+                "notValidAfter": "string",
+                "notValidBefore": "string",
+                "primaryCode": "string",
+                "ticketDesignator": "string"
+              }
+            ]
+          },
+          "fareData": {
+            "issueIdentifier": "string",
+            "monetaryInfo": [
+              {
+                "amount": "string",
+                "currencyCode": "string",
+                "qualifier": "string"
+              }
+            ],
+            "taxFields": [
+              {
+                "taxAmount": "string",
+                "taxCountryCode": "string",
+                "taxCurrency": "string",
+                "taxIndicator": "string",
+                "taxNatureCode": "string"
+              }
+            ]
+          },
+          "referenceForTstData": {
+            "reference": [
+              {
+                "number": "string",
+                "qualifier": "string"
+              }
+            ]
+          },
+          "segmentAssociation": {
+            "selection": [
+              {
+                "option": "string",
+                "optionInformation": "string"
+              }
+            ]
+          },
+          "tstFreetext": [
+            {
+              "freetextDetail": {
+                "companyId": "string",
+                "status": "string",
+                "subjectQualifier": "string",
+                "type": "string"
+              },
+              "longFreetext": "string"
+            }
+          ],
+          "tstGeneralInformation": {
+            "generalInformation": {
+              "salesIndicator": "string",
+              "tstCreationDate": "string",
+              "tstReferenceNumber": "string"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "soapHeader": {
+    "session": {
+      "securityToken": "string",
+      "sequenceNumber": "string",
+      "sessionId": "string",
+      "transactionStatusCode": "string"
+    },
+    "transactionFlowLinkType": {
+      "consumer": {
+        "uniqueID": "string"
+      },
+      "receiver": {
+        "serverID": "string"
+      }
+    }
+  }
+}

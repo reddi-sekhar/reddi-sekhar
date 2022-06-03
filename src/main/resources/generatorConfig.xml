@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	
+	<!--context: operating environment, contains most of the configuration information 
+		id: the unique identifier of this operating environment targetRuntime: configure 
+		the generated code style. The default is MyBatis3, and MyBatis3Simple can 
+		also be set, which does not generate queries with complex conditions -->
+	<context id="testContext" targetRuntime="MyBatis3"
+		defaultModelType="flat">
+		<plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
+		<commentGenerator>
+			<!--Whether to remove the automatically generated comment true: yes: false: 
+				no -->
+			<property name="suppressAllComments" value="false" />
+			<!--Whether to remove date notes -->
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<!--Database connection information: driver class, connection address, 
+			table name, user name, password -->
+	    <jdbcConnection
+            driverClass="org.postgresql.Driver"
+            connectionURL="jdbc:postgresql://localhost:5432/postgres"
+            userId="postgres"
+            password="Manager123">
+        </jdbcConnection>
+
+		<!--The default is false, and the type of conversion to Java will be determined 
+			based on the data accuracy. Recommend When true, it will force the database 
+			Decimal and Numeric data types to be parsed as java.math.BigDecimal -->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+            <property name="useJSR310Types" value="true" />
+		</javaTypeResolver>
+
+		<!--javaModelGenerator: configuration of entity class targetPackage: Generate 
+			the package where the entity class is located targetProject: the location 
+			where the POJO class is generated -->
+		<!-- ToDo: Change according to the application. -->
+		<javaModelGenerator targetProject="src/main/java"
+			targetPackage="jp.co.ana.cas.anaapi.pros.r001.dto.database">
+			<!--Whether to generate sub-packages according to the table schema -->
+			<property name="enableSubPackages" value="false" />
+			<!-- Whether to clean the space before and after the value returned from 
+				the database -->
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+		<!-- sqlMapGenerator: About the configuration of the mapping file, the 
+			properties are similar to the javaModelGenerator above targetPackage: Specify 
+			the package name where mapper.xml is located targetProject: Specify the location 
+			in the project, because it is a maven project, so it is placed under resource. 
+			The final Mapper.xml file directory is the mappers directory under src / 
+			main / resources -->
+		<sqlMapGenerator targetPackage="mappers"
+			targetProject="src/main/resources">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<!--javaClientGenerator: About the configuration of the Mapper interface, 
+			the properties are similar to the javaModelGenerator above type = "XMLMAPPER": 
+			Set to generate mapping instead of annotation in XML format -->
+		<!-- ToDo: Change according to the application. -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="jp.co.ana.cas.anaapi.pros.r001.repository"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<!--Specify the database table catalog: catalog in the database tableName: 
+			the name of the table domainObjectName: specifies the name of the generated 
+			entity class corresponding to the table -->
+		<table schema="ana_pros" tableName="pros_bid_price_information_tbl"
+			domainObjectName="ProsBidPriceInfoEntityDto">
+			<!--Set the echo function of self-increasing ID -->
+			<generatedKey column="seqid_bid_price_information" sqlStatement="JDBC" identity="true" />
+		</table>
+
+	</context>
+</generatorConfiguration>

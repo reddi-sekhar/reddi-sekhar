@@ -1,0 +1,81 @@
+package jp.co.ana.cas.b18.connector.pnraddmultielements.vo;
+
+import java.util.Objects;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import jp.co.ana.cas.b18.connector.pnraddmultielements.vo.MiscellaneousRemarkType198195C;
+import org.openapitools.jackson.nullable.JsonNullable;
+import javax.validation.Valid;
+import javax.validation.constraints.*;
+
+/**
+ * MiscellaneousRemarksType136700S
+ */
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-05-26T18:58:40.935097200+05:30[Asia/Calcutta]")
+public class MiscellaneousRemarksType136700S   {
+  @JsonProperty("remarkDetails")
+  private MiscellaneousRemarkType198195C remarkDetails;
+
+  public MiscellaneousRemarksType136700S remarkDetails(MiscellaneousRemarkType198195C remarkDetails) {
+    this.remarkDetails = remarkDetails;
+    return this;
+  }
+
+  /**
+   * Get remarkDetails
+   * @return remarkDetails
+  */
+  @ApiModelProperty(value = "")
+
+  @Valid
+
+  public MiscellaneousRemarkType198195C getRemarkDetails() {
+    return remarkDetails;
+  }
+
+  public void setRemarkDetails(MiscellaneousRemarkType198195C remarkDetails) {
+    this.remarkDetails = remarkDetails;
+  }
+
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    MiscellaneousRemarksType136700S miscellaneousRemarksType136700S = (MiscellaneousRemarksType136700S) o;
+    return Objects.equals(this.remarkDetails, miscellaneousRemarksType136700S.remarkDetails);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(remarkDetails);
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class MiscellaneousRemarksType136700S {\n");
+    
+    sb.append("    remarkDetails: ").append(toIndentedString(remarkDetails)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
+}
+

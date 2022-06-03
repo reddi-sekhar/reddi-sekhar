@@ -1,0 +1,12 @@
+ {
+		"longTextString": {
+			"textStringDetails": "string"
+		},
+		"messageActionDetails": {
+			"messageFunctionDetails": {
+				"businessFunction": "string",
+				"messageFunction": "string"
+			},
+			"responseType": "string"
+		}
+	}

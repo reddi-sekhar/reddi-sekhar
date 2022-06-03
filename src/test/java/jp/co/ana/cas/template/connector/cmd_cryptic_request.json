@@ -1,0 +1,30 @@
+{
+  "intelligentWorkstationInfo": {
+    "companyIdentification": "string"
+  },
+  "longTextString": {
+    "textStringDetails": "string"
+  },
+  "messageAction": {
+    "messageFunctionDetails": {
+      "additionalMessageFunction": [
+        "string"
+      ],
+      "businessFunction": "string",
+      "messageFunction": "string"
+    },
+    "responseType": "string"
+  },
+  "numberOfUnits": {
+    "numberOfUnitsDetails1": {
+      "units": 0,
+      "unitsQualifier": "string"
+    },
+    "numberOfUnitsDetails2": [
+      {
+        "units": 0,
+        "unitsQualifier": "string"
+      }
+    ]
+  }
+}

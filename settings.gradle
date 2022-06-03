@@ -1,0 +1,15 @@
+// ▼▼▼ASYNET用設定▼▼▼
+pluginManagement {
+	repositories {
+		maven {
+			name 'spring'
+			url = 'https://repo.spring.io/release'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+// ▲▲▲ASYNET用設定▲▲▲
+
+rootProject.name = 'MARB-B18'
+// リポジトリ作成時に、rootProject.nameの中身をリポジトリ名に変更する。

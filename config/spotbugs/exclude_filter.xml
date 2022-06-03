@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <Class name="jp.co.ana.cas.proto.config.OpenAPIDocumentationConfig$BasePathAwareRelativePathProvider" />
+    </Match>
+    <Match>
+        <Package name="~.*\.domain\.database" />
+    </Match>
+</FindBugsFilter>
